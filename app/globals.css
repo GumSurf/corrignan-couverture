@@ -1,17 +1,44 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-200: #bfdbfe;
-  --color-primary-300: #93c5fd;
-  --color-primary-400: #60a5fa;
-  --color-primary-500: #3b82f6;
-  --color-primary-600: #2563eb;
-  --color-primary-700: #1d4ed8;
-  --color-primary-800: #1e40af;
-  --color-primary-900: #1e3a8a;
-  --color-primary-950: #172554;
+  /* ── Or (couleur primaire – logo doré) ── */
+  --color-gold-50:  #fdf8ee;
+  --color-gold-100: #f9edcc;
+  --color-gold-200: #f3d98a;
+  --color-gold-300: #e8c04a;
+  --color-gold-400: #d4a832;
+  --color-gold-500: #c9a84c;
+  --color-gold-600: #b8882a;
+  --color-gold-700: #8f6418;
+  --color-gold-800: #6b490e;
+  --color-gold-900: #4a3008;
+  --color-gold-950: #2a1a03;
+
+  /* ── Ardoise (couleur secondaire – bleu du logo) ── */
+  --color-slate-50:  #eef6fb;
+  --color-slate-100: #d0e8f4;
+  --color-slate-200: #a4cfe8;
+  --color-slate-300: #7ab8da;
+  --color-slate-400: #5a9ec0;
+  --color-slate-500: #4585a8;
+  --color-slate-600: #336d8e;
+  --color-slate-700: #225572;
+  --color-slate-800: #153e55;
+  --color-slate-900: #0c2a3b;
+  --color-slate-950: #061520;
+
+  /* ── Nuit (neutre – fond sombre du logo) ── */
+  --color-night-50:  #f4f3f0;
+  --color-night-100: #dddbd4;
+  --color-night-200: #b8b09a;
+  --color-night-300: #8a8270;
+  --color-night-400: #5e584c;
+  --color-night-500: #3a362e;
+  --color-night-600: #2a2620;
+  --color-night-700: #1e1c18;
+  --color-night-800: #1a1a1a;
+  --color-night-900: #111110;
+  --color-night-950: #0a0a09;
 }
 
 /* IMPORTANT */

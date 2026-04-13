@@ -27,7 +27,7 @@ const testimonials = [
   {
     name: "Martine et Claude R.",
     location: "Hennebont",
-    text: "Devis clair, pas de surprise sur la facture finale. L'équipe est propre sur le chantier — ils ont tout laissé rangé derrière eux. C'est rare, ça mérite d'être dit.",
+    text: "Devis clair, pas de surprise sur la facture finale. L'équipe est propre sur le chantier, ils ont tout laissé rangé derrière eux. C'est rare, ça mérite d'être dit.",
   },
   {
     name: "Florian M.",
@@ -41,7 +41,7 @@ export default function TestimonialsSwiper() {
     const swiper = new Swiper('.mySwiper', {
       modules: [Navigation, Pagination],
       slidesPerView: 3,
-      spaceBetween: 28,
+      spaceBetween: 32,
       centeredSlides: true,
       loop: true,
 
@@ -56,20 +56,9 @@ export default function TestimonialsSwiper() {
       },
 
       breakpoints: {
-        0: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-          centeredSlides: false,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 28,
-          centeredSlides: true,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 32,
-        },
+        0: { slidesPerView: 1, spaceBetween: 20, centeredSlides: false },
+        768: { slidesPerView: 2, spaceBetween: 28, centeredSlides: true },
+        1024: { slidesPerView: 3, spaceBetween: 32 },
       },
     })
 
@@ -77,42 +66,54 @@ export default function TestimonialsSwiper() {
   }, [])
 
   return (
-    <section className="py-24 bg-white dark:bg-gray-900">
+    <section className="py-24 bg-night-800">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
-        <div className="mb-14 flex flex-col items-center justify-between gap-8 sm:flex-row">
+        <div className="mb-14 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
+
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white">Ce que disent nos clients</h2>
-            <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm">Lorient · Auray · Vannes · Bassin lorientais</p>
+            <h2 className="text-4xl font-bold text-white">
+              Ce que disent nos clients
+            </h2>
+            <p className="mt-2 text-[#b8b09a] text-sm">
+              Lorient · Auray · Vannes · Bassin lorientais
+            </p>
+
+            <div className="mt-4 w-20 h-[2px] bg-gradient-to-r from-[#c9a84c] to-[#e0b84a]" />
           </div>
 
           {/* Controls */}
-          <div className="flex items-center gap-4">
-            <button className="swiper-button-prev group flex h-12 w-12 items-center justify-center rounded-full border border-slate-800 transition hover:bg-slate-800 dark:border-slate-500 dark:hover:bg-slate-700">
-              <svg className="h-5 w-5 text-slate-800 group-hover:text-white dark:text-slate-300" viewBox="0 0 24 24" fill="none">
-                <path d="M20 12H4M10 6L4 12L10 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          <div className="flex items-center gap-3">
+
+            <button className="swiper-button-prev group flex h-11 w-11 items-center justify-center rounded-full border border-[#c9a84c33] bg-[#0f0f0f] hover:bg-[#1a1a1a] transition">
+              <svg className="h-5 w-5 text-[#f0d080] group-hover:text-white" viewBox="0 0 24 24" fill="none">
+                <path d="M20 12H4M10 6L4 12L10 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
               </svg>
             </button>
 
-            <button className="swiper-button-next group flex h-12 w-12 items-center justify-center rounded-full border border-slate-800 transition hover:bg-slate-800 dark:border-slate-500 dark:hover:bg-slate-700">
-              <svg className="h-5 w-5 text-slate-800 group-hover:text-white dark:text-slate-300" viewBox="0 0 24 24" fill="none">
-                <path d="M4 12H20M14 6L20 12L14 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <button className="swiper-button-next group flex h-11 w-11 items-center justify-center rounded-full border border-[#c9a84c33] bg-[#0f0f0f] hover:bg-[#1a1a1a] transition">
+              <svg className="h-5 w-5 text-[#f0d080] group-hover:text-white" viewBox="0 0 24 24" fill="none">
+                <path d="M4 12H20M14 6L20 12L14 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
               </svg>
             </button>
+
           </div>
         </div>
 
         {/* Swiper */}
         <div className="swiper mySwiper">
+
           <div className="swiper-wrapper">
+
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className="swiper-slide rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-6 transition hover:border-slate-400 dark:hover:border-slate-500"
+                className="swiper-slide rounded-2xl border border-[#c9a84c22] bg-[#0f0f0f] p-6 transition hover:border-[#c9a84c55]"
               >
-                {/* Étoiles */}
-                <div className="mb-5 flex text-amber-400">
+
+                {/* étoiles */}
+                <div className="mb-5 flex text-[#f0d080]">
                   {[...Array(5)].map((_, j) => (
                     <svg key={j} className="h-5 w-5" viewBox="0 0 18 17" fill="currentColor">
                       <path d="M8.1 1.3l1.8 3.7 4 0.6-2.9 2.8 0.7 4-3.6-1.9-3.6 1.9 0.7-4L2.1 5.6l4-0.6z" />
@@ -120,23 +121,32 @@ export default function TestimonialsSwiper() {
                   ))}
                 </div>
 
-                <p className="mb-6 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                <p className="mb-6 text-[#b8b09a] leading-relaxed text-sm">
                   {t.text}
                 </p>
 
+                {/* user */}
                 <div className="flex items-center gap-3">
-                  {/* Initiales à la place de la photo */}
-                  <div className="h-10 w-10 rounded-full bg-slate-100 dark:bg-slate-700 flex items-center justify-center text-slate-700 dark:text-slate-200 font-semibold text-sm shrink-0">
+
+                  <div className="h-10 w-10 rounded-full bg-[#c9a84c22] border border-[#c9a84c33] flex items-center justify-center text-[#f0d080] font-semibold text-sm shrink-0">
                     {t.name.charAt(0)}
                   </div>
+
                   <div>
-                    <p className="font-medium text-gray-900 dark:text-white text-sm">{t.name}</p>
-                    <span className="text-xs text-gray-400">{t.location}</span>
+                    <p className="font-medium text-white text-sm">{t.name}</p>
+                    <span className="text-xs text-[#7a7a7a]">{t.location}</span>
                   </div>
+
                 </div>
+
               </div>
             ))}
+
           </div>
+
+          {/* pagination (optionnel styling si tu l’utilises) */}
+          <div className="swiper-pagination mt-8 !relative"></div>
+
         </div>
 
       </div>
