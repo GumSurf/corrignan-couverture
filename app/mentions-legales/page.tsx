@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mentions légales, Corrignan Couverture",
-  description: "Mentions légales de Corrignan Couverture. Informations juridiques, coordonnées, conditions d'utilisation du site web.",
-  keywords: "mentions légales, conditions générales, Corrignan Couverture",
+  title: "Mentions légales, Damien Corrignan, Corrignan Couverture",
+  description: "Mentions légales de Damien Corrignan, couvreur indépendant. Informations juridiques, coordonnées, conditions d'utilisation du site web.",
+  keywords: "mentions légales, conditions générales, Damien Corrignan, Corrignan Couverture",
   robots: "noindex, nofollow", // Les pages légales n'ont pas besoin d'être indexées
 };
 
@@ -12,8 +12,12 @@ export default function MentionsLegalesPage() {
     <main className="bg-night-800 min-h-screen">
 
       {/* ── Header ── */}
-      <section className="py-16 px-4 bg-night-900 border-b border-[#c9a84c22]">
-        <div className="mx-auto max-w-screen-xl text-center">
+      <section
+        className="py-16 px-4 bg-night-900 border-b border-[#c9a84c22]"
+      >
+        <div
+          className="mx-auto max-w-screen-xl text-center"
+        >
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-white">
             Mentions <span className="text-[#f0d080]">légales</span>
           </h1>
@@ -33,13 +37,12 @@ export default function MentionsLegalesPage() {
             <div className="bg-night-700 rounded-2xl p-8 border border-[#c9a84c33] mb-8">
               <h2 className="text-2xl font-bold text-white mb-6">Éditeur du site</h2>
               <div className="text-night-200 space-y-3">
-                <p><strong>Nom de l'entreprise :</strong> Corrignan Couverture</p>
-                <p><strong>Forme juridique :</strong> Société par Actions Simplifiée (SAS)</p>
-                <p><strong>Capital social :</strong> 50 000 €</p>
-                <p><strong>SIRET :</strong> XXX XXX XXX XXXXX</p>
-                <p><strong>SIREN :</strong> XXX XXX XXX</p>
-                <p><strong>Adresse du siège social :</strong><br />
-                123 Rue de la Couverture<br />
+                <p><strong>Nom :</strong> Damien Corrignan</p>
+                <p><strong>Entreprise :</strong> Corrignan Couverture</p>
+                <p><strong>Statut :</strong> Entrepreneur individuel</p>
+                <p><strong>SIRET :</strong> [À renseigner]</p>
+                <p><strong>Adresse :</strong><br />
+                5 Chem. du Zulio<br />
                 56600 Lanester<br />
                 France</p>
                 <p><strong>Téléphone :</strong> 06 04 10 70 18</p>

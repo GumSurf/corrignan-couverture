@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react'
+import Image from 'next/image'
 import { EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import {
@@ -11,7 +12,7 @@ import {
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 
 type PropType = {
-  slides: number[]
+  slides: string[]
   options?: EmblaOptionsType
 }
 
@@ -33,10 +34,15 @@ const EmblaCarousel = (props: PropType) => {
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
+          {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
-              <div className="embla__slide__number">
-                <span>{index + 1}</span>
+              <div className="embla__slide__image">
+                <Image
+                  src={slide}
+                  alt={`Image de chantier ${index + 1}`}
+                  fill
+                  className="object-cover rounded-lg"
+                />
               </div>
             </div>
           ))}

@@ -1,29 +1,65 @@
+'use client';
+
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 14 },
+  show: { opacity: 1, y: 0 },
+};
 
 export default function Cta() {
   return (
-    <section className="relative bg-night-800 py-20 px-4">
+    <section className="relative bg-night-800 py-20 px-4 overflow-hidden">
 
       {/* glow décoratif */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#c9a84c22] blur-[120px] rounded-full" />
       </div>
 
-      <div className="relative mx-auto max-w-screen-sm text-center">
+      <motion.div
+        className="relative mx-auto max-w-screen-sm text-center"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={container}
+      >
 
-        <h2 className="mb-4 text-3xl md:text-4xl font-extrabold leading-tight text-white">
+        <motion.h2
+          variants={item}
+          className="mb-4 text-3xl md:text-4xl font-extrabold leading-tight text-white"
+        >
           Un projet de toiture ?{" "}
           <span className="text-[#f0d080]">On en parle.</span>
-        </h2>
+        </motion.h2>
 
-        <div className="mx-auto w-20 h-[2px] bg-gradient-to-r from-[#c9a84c] to-[#e0b84a] mb-6" />
+        <motion.div
+          variants={item}
+          className="mx-auto w-20 h-[2px] bg-gradient-to-r from-[#c9a84c] to-[#e0b84a] mb-6"
+        />
 
-        <p className="mb-8 text-[#b8b09a] md:text-lg leading-relaxed">
+        <motion.p
+          variants={item}
+          className="mb-8 text-[#b8b09a] md:text-lg leading-relaxed"
+        >
           Devis gratuit sous 48h, sans engagement. On se déplace sur Lorient, Lanester, Auray
           et tout le bassin lorientais.
-        </p>
+        </motion.p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <motion.div
+          variants={item}
+          className="flex flex-col sm:flex-row items-center justify-center gap-3"
+        >
 
           <Link
             href="/contact"
@@ -33,7 +69,7 @@ export default function Cta() {
           </Link>
 
           <a
-            href="tel:0297000000"
+            href="tel:0604107018"
             className="flex items-center gap-2 text-sm font-medium text-[#f0d080] hover:text-white transition px-5 py-3 rounded-lg border border-[#c9a84c33] bg-[#0f0f0f]"
           >
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f0d080" strokeWidth="2">
@@ -42,9 +78,9 @@ export default function Cta() {
             06 04 10 70 18
           </a>
 
-        </div>
+        </motion.div>
 
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité, Corrignan Couverture",
-  description: "Politique de confidentialité de Corrignan Couverture. Découvrez comment nous protégeons vos données personnelles et respectons le RGPD.",
-  keywords: "politique de confidentialité, RGPD, protection des données, Corrignan Couverture",
+  title: "Politique de confidentialité, Damien Corrignan, Corrignan Couverture",
+  description: "Politique de confidentialité de Damien Corrignan, couvreur indépendant. Découvrez comment je protège vos données personnelles et respecte le RGPD.",
+  keywords: "politique de confidentialité, RGPD, protection des données, Damien Corrignan, Corrignan Couverture",
   robots: "noindex, nofollow", // Les pages légales n'ont pas besoin d'être indexées
 };
 

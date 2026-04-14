@@ -43,7 +43,9 @@
 
 /* IMPORTANT */
 html, body {
+  overflow-x: hidden;
   height: 100%;
+  background-color: var(--color-night-800);
 }
 
 .swiper-button-prev:after,

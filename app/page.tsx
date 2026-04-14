@@ -7,7 +7,6 @@ import PromoSection from "./components/promoSection";
 import CtaImage from "./components/ctaImage";
 import FAQ from "./components/faq";
 import TestimonialsSwiper from "./components/testimonialsSwiper";
-
 import EmblaCarousel from "./components/EmblaCarousel";
 import { EmblaOptionsType } from 'embla-carousel'
 import './css/sandbox.css'
@@ -15,29 +14,34 @@ import './css/embla.css'
 
 export default function Home() {
   const OPTIONS: EmblaOptionsType = { loop: true }
-  const SLIDE_COUNT = 5
-  const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+  const SLIDES = [
+  "/images/chantiers/ardoise/ardoise1.jpg",
+  "/images/chantiers/ardoise/ardoise2.jpg",
+  "/images/chantiers/bacAcier/bac_acier2.jpg",
+  "/images/chantiers/ardoise/ardoise5.jpg",
+  "/images/chantiers/bacAcier/bac_acier5.jpg",
+]
 
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="bg-night-800 min-h-screen">
 
-      <Hero />
+        <Hero />
 
-      <Heading />
+        <Heading />
 
-      <PromoSection />
+        <PromoSection />
 
-      <EmblaCarousel options={OPTIONS} slides={SLIDES} />
+        <EmblaCarousel options={OPTIONS} slides={SLIDES} />
 
-      <CtaImage />
+        <CtaImage />
 
-      <TestimonialsSwiper />
+        <TestimonialsSwiper />
 
-      <Description />
+        <Description />
 
-      <FAQ />
+        <FAQ />
 
-      <Cta />
+        <Cta />
 
     </div>
   );

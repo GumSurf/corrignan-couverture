@@ -32,8 +32,8 @@ export const useDotButton = (
   useEffect(() => {
     if (!emblaApi) return;
 
-    onInit(emblaApi);
-    onSelect(emblaApi);
+    setScrollSnaps(emblaApi.scrollSnapList());
+    setSelectedIndex(emblaApi.selectedScrollSnap());
 
     emblaApi
       .on("reInit", onInit)

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 export type FaqItem = {
   question: string;
@@ -10,27 +11,33 @@ export type FaqItem = {
 export const defaultFaqs: FaqItem[] = [
   {
     question: "Dans quelle zone intervenez-vous ?",
-    answer: "On intervient principalement sur le bassin lorientais : Lorient, Lanester, Hennebont, Auray, Ploemeur, Quéven et les communes alentour. On se déplace aussi sur l'ensemble du Morbihan selon la nature du chantier. N'hésitez pas à nous appeler pour en discuter.",
+    answer:
+      "On intervient principalement sur le bassin lorientais : Lorient, Lanester, Hennebont, Auray, Ploemeur, Quéven et les communes alentour. On se déplace aussi sur l'ensemble du Morbihan selon la nature du chantier. N'hésitez pas à nous appeler pour en discuter.",
   },
   {
     question: "Est-ce que vous faites des devis gratuits ?",
-    answer: "Oui, le devis est toujours gratuit et sans engagement. On se déplace pour voir le chantier, évaluer l'état de la toiture et vous remettre un devis clair et détaillé sous 48h.",
+    answer:
+      "Oui, le devis est toujours gratuit et sans engagement. On se déplace pour voir le chantier, évaluer l'état de la toiture et vous remettre un devis clair et détaillé sous 48h.",
   },
   {
     question: "Quels types de toitures prenez-vous en charge ?",
-    answer: "On travaille sur tous types de couvertures : ardoise naturelle et artificielle, zinc, bac acier, aluminium, et bardage extérieur. Que ce soit pour une rénovation complète, une réparation ponctuelle ou une construction neuve, on a les compétences pour intervenir.",
+    answer:
+      "On travaille sur tous types de couvertures : ardoise naturelle et artificielle, zinc, bac acier, aluminium, et bardage extérieur. Que ce soit pour une rénovation complète, une réparation ponctuelle ou une construction neuve, on a les compétences pour intervenir.",
   },
   {
     question: "Faites-vous appel à des sous-traitants ?",
-    answer: "Non. C'est notre propre équipe qui réalise les travaux du début à la fin. Pas de sous-traitance, pas d'intermédiaire : vous savez toujours qui est sur votre chantier et vous avez un interlocuteur unique.",
+    answer:
+      "Non. C'est notre propre équipe qui réalise les travaux du début à la fin. Pas de sous-traitance, pas d'intermédiaire : vous savez toujours qui est sur votre chantier et vous avez un interlocuteur unique.",
   },
   {
     question: "Intervenez-vous en urgence pour les fuites ?",
-    answer: "Oui, on essaie d'être réactifs en cas de fuite ou de dégât après une tempête. Contactez-nous par téléphone directement, on évalue la situation et on organise une intervention dans les meilleurs délais.",
+    answer:
+      "Oui, on essaie d'être réactifs en cas de fuite ou de dégât après une tempête. Contactez-nous par téléphone directement, on évalue la situation et on organise une intervention dans les meilleurs délais.",
   },
   {
     question: "Êtes-vous assurés pour les travaux de couverture ?",
-    answer: "Oui, Corrignan Couverture est titulaire d'une assurance décennale et d'une responsabilité civile professionnelle. On peut vous fournir les attestations sur simple demande avant le début des travaux.",
+    answer:
+      "Oui, Corrignan Couverture est titulaire d'une assurance décennale et d'une responsabilité civile professionnelle. On peut vous fournir les attestations sur simple demande avant le début des travaux.",
   },
 ];
 
@@ -38,6 +45,20 @@ type Props = {
   faqs?: FaqItem[];
   title?: string;
   subtitle?: string;
+};
+
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.08,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 10 },
+  show: { opacity: 1, y: 0 },
 };
 
 export default function FAQ({
@@ -68,10 +89,17 @@ export default function FAQ({
       />
 
       <section className="bg-night-800 py-20 px-4">
-        <div className="max-w-3xl mx-auto">
+
+        <motion.div
+          className="max-w-3xl mx-auto"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={container}
+        >
 
           {/* Header */}
-          <div className="text-center mb-12">
+          <motion.div className="text-center mb-12" variants={item}>
 
             <p className="text-[#f0d080] text-xs font-medium tracking-widest uppercase mb-2">
               FAQ
@@ -87,14 +115,15 @@ export default function FAQ({
               {subtitle}
             </p>
 
-          </div>
+          </motion.div>
 
           {/* FAQ items */}
           <div className="space-y-3">
 
             {faqs.map((faq, index) => (
-              <div
+              <motion.div
                 key={index}
+                variants={item}
                 className="border border-[#c9a84c22] rounded-xl bg-[#0f0f0f] px-5 py-4 cursor-pointer transition hover:border-[#c9a84c44]"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
@@ -112,7 +141,9 @@ export default function FAQ({
                     viewBox="0 0 18 18"
                     fill="none"
                     className={`shrink-0 transition-transform duration-300 ${
-                      openIndex === index ? "rotate-180 text-[#f0d080]" : "text-[#b8b09a]"
+                      openIndex === index
+                        ? "rotate-180 text-[#f0d080]"
+                        : "text-[#b8b09a]"
                     }`}
                   >
                     <path
@@ -127,22 +158,28 @@ export default function FAQ({
                 </div>
 
                 {/* answer */}
-                <p
-                  className={`text-sm text-[#b8b09a] leading-relaxed transition-all duration-300 overflow-hidden ${
+                <motion.div
+                  initial={false}
+                  animate={
                     openIndex === index
-                      ? "opacity-100 max-h-40 pt-3"
-                      : "opacity-0 max-h-0"
-                  }`}
+                      ? { opacity: 1, height: "auto" }
+                      : { opacity: 0, height: 0 }
+                  }
+                  transition={{ duration: 0.25 }}
+                  className="overflow-hidden"
                 >
-                  {faq.answer}
-                </p>
+                  <p className="text-sm text-[#b8b09a] leading-relaxed pt-3">
+                    {faq.answer}
+                  </p>
+                </motion.div>
 
-              </div>
+              </motion.div>
             ))}
 
           </div>
 
-        </div>
+        </motion.div>
+
       </section>
     </>
   );

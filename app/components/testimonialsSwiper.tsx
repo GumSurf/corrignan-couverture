@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
+import { motion } from 'framer-motion'
 import Swiper from 'swiper'
 import { Navigation, Pagination } from 'swiper/modules'
 
@@ -70,36 +71,71 @@ export default function TestimonialsSwiper() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
-        <div className="mb-14 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="mb-14 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end"
+        >
 
-          <div>
-            <h2 className="text-4xl font-bold text-white">
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              show: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            transition={{ staggerChildren: 0.1 }}
+          >
+            <motion.h2 className="text-4xl font-bold text-white">
               Ce que disent nos clients
-            </h2>
-            <p className="mt-2 text-[#b8b09a] text-sm">
+            </motion.h2>
+            <motion.p className="mt-2 text-[#b8b09a] text-sm">
               Lorient · Auray · Vannes · Bassin lorientais
-            </p>
+            </motion.p>
 
-            <div className="mt-4 w-20 h-[2px] bg-gradient-to-r from-[#c9a84c] to-[#e0b84a]" />
-          </div>
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: 80 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3, duration: 0.6 }}
+              className="mt-4 h-[2px] bg-gradient-to-r from-[#c9a84c] to-[#e0b84a]"
+            />
+          </motion.div>
 
           {/* Controls */}
-          <div className="flex items-center gap-3">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="flex items-center gap-3"
+          >
 
-            <button className="swiper-button-prev group flex h-11 w-11 items-center justify-center rounded-full border border-[#c9a84c33] bg-[#0f0f0f] hover:bg-[#1a1a1a] transition">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              aria-label="Témoignage précédent"
+              className="swiper-button-prev group flex h-11 w-11 items-center justify-center rounded-full border border-[#c9a84c33] bg-[#0f0f0f] hover:bg-[#1a1a1a] transition"
+            >
               <svg className="h-5 w-5 text-[#f0d080] group-hover:text-white" viewBox="0 0 24 24" fill="none">
                 <path d="M20 12H4M10 6L4 12L10 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
               </svg>
-            </button>
+            </motion.button>
 
-            <button className="swiper-button-next group flex h-11 w-11 items-center justify-center rounded-full border border-[#c9a84c33] bg-[#0f0f0f] hover:bg-[#1a1a1a] transition">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              aria-label="Témoignage suivant"
+              className="swiper-button-next group flex h-11 w-11 items-center justify-center rounded-full border border-[#c9a84c33] bg-[#0f0f0f] hover:bg-[#1a1a1a] transition"
+            >
               <svg className="h-5 w-5 text-[#f0d080] group-hover:text-white" viewBox="0 0 24 24" fill="none">
                 <path d="M4 12H20M14 6L20 12L14 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
               </svg>
-            </button>
+            </motion.button>
 
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Swiper */}
         <div className="swiper mySwiper">
@@ -107,8 +143,12 @@ export default function TestimonialsSwiper() {
           <div className="swiper-wrapper">
 
             {testimonials.map((t, i) => (
-              <div
+              <motion.div
                 key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
                 className="swiper-slide rounded-2xl border border-[#c9a84c22] bg-[#0f0f0f] p-6 transition hover:border-[#c9a84c55]"
               >
 
@@ -139,7 +179,7 @@ export default function TestimonialsSwiper() {
 
                 </div>
 
-              </div>
+              </motion.div>
             ))}
 
           </div>

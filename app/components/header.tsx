@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const services = {
@@ -18,7 +19,9 @@ const services = {
 
 const navLinks = [
   { label: "Accueil", href: "/" },
+  { label: "Services", href: "/services" },
   { label: "Galerie", href: "/galerie" },
+  { label: "Zone d'intervention", href: "/zone-intervention" },
   { label: "À propos", href: "/a-propos" },
   { label: "Contact", href: "/contact" },
 ];
@@ -45,7 +48,7 @@ export default function Header() {
   }, [menuOpen]);
 
   return (
-    <>
+    <div className="bg-night-800 border-b border-[#c9a84c33] sticky top-0 z-50">
       {/* ─── Topbar ─── */}
       <div className="hidden sm:flex justify-center gap-8 px-4 py-1.5 text-xs bg-[#0f0f0f] text-gold-500">
         <span className="opacity-75">Lorient · Lanester · Auray · Vannes · Morbihan</span>
@@ -183,7 +186,7 @@ export default function Header() {
             {/* ── CTA desktop ── */}
             <div className="hidden lg:flex items-center gap-3">
               <a
-                href="tel:0297000000"
+                href="tel:0604107018"
                 className="flex items-center gap-2 text-sm text-night-200 hover:text-[#f0d080] transition-colors"
               >
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -305,7 +308,7 @@ export default function Header() {
             {/* CTA mobile */}
             <div className="px-4 pt-5 flex flex-col gap-3">
               <a
-                href="tel:0297000000"
+                href="tel:0604107018"
                 className="flex items-center justify-center gap-2.5 py-3 border border-[#c9a84c44] rounded-xl text-[15px] font-medium text-gold-500"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -328,6 +331,6 @@ export default function Header() {
           </div>
         </div>
       </header>
-    </>
+    </div>
   );
 }

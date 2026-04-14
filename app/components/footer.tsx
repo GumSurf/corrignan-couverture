@@ -1,9 +1,17 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="bg-night-800 border-t border-[#c9a84c22] px-4 py-14">
+    <motion.footer
+      initial={{ opacity: 0, y: 18 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.55, ease: "easeOut" }}
+      className="bg-night-800 border-t border-[#c9a84c22] px-4 py-14"
+    >
 
       <div className="mx-auto max-w-screen-xl">
 
@@ -36,7 +44,7 @@ export default function Footer() {
             </p>
 
             <a
-              href="tel:0297000000"
+              href="tel:0604107018"
               className="inline-flex items-center gap-2 mt-5 text-sm font-medium text-[#f0d080] hover:text-white transition"
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f0d080" strokeWidth="2">
@@ -127,6 +135,6 @@ export default function Footer() {
         </div>
 
       </div>
-    </footer>
+    </motion.footer>
   );
 }

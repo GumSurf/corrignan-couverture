@@ -4,12 +4,12 @@ import ContactForm from "../components/contactForm";
 import OtherServiceCard from "../components/otherServiceCard";
 
 export const metadata: Metadata = {
-  title: "Contact, Corrignan Couverture, couvreur à Lanester",
-  description: "Contactez Corrignan Couverture pour votre projet de couverture. Devis gratuit sous 48h. Lorient, Lanester, Auray, Vannes, Morbihan.",
-  keywords: "contact couvreur, devis couverture Morbihan, couvreur Lanester, contact Corrignan",
+  title: "Contact, Damien Corrignan, couvreur indépendant à Lanester",
+  description: "Contactez Damien Corrignan, couvreur indépendant à Lanester, pour votre projet de couverture. Devis gratuit sous 48h. Lorient, Ploemeur, Auray, Vannes, Morbihan.",
+  keywords: "contact Damien Corrignan, devis couverture Morbihan, couvreur Lanester, contact Corrignan Couverture, couvreur Lorient, couvreur Ploemeur",
   openGraph: {
-    title: "Contact, Corrignan Couverture",
-    description: "Contactez-nous pour votre projet de couverture. Devis gratuit sous 48h.",
+    title: "Contact, Damien Corrignan, Corrignan Couverture",
+    description: "Contactez-moi pour votre projet de couverture. Devis gratuit sous 48h.",
     type: "website",
   },
 };
@@ -309,7 +309,7 @@ export default function ContactPage() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
-              href="tel:0297000000"
+              href="tel:0604107018"
               className="inline-flex items-center gap-2 bg-gradient-to-br from-[#b8882a] to-[#e0b84a] text-[#120d00] font-medium rounded-lg text-sm px-6 py-3 hover:opacity-90 transition"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

@@ -7,6 +7,14 @@
   --slide-size: 70%;
 }
 
+@media (max-width: 768px) {
+  .embla {
+    --slide-height: 12rem;
+    --slide-spacing: 0.5rem;
+    --slide-size: 80%;
+  }
+}
+
 .embla__viewport {
   overflow: hidden;
 }
@@ -34,6 +42,12 @@
   justify-content: center;
   height: var(--slide-height);
   user-select: none;
+}
+
+.embla__slide__image {
+  position: relative;
+  height: var(--slide-height);
+  width: 100%;
 }
 
 .embla__controls {
@@ -69,7 +83,7 @@
 
   z-index: 1;
   border-radius: 50%;
-  color: var(--text-body);
+  color: var(--color-teal-700);
   display: flex;
   align-items: center;
   justify-content: center;

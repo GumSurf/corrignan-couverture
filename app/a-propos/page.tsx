@@ -6,12 +6,12 @@ import FAQ from "../components/faq";
 import { type FaqItem } from "../components/faq";
 
 export const metadata: Metadata = {
-  title: "À propos, Corrignan Couverture, couvreur à Lanester",
-  description: "Découvrez Corrignan Couverture : entreprise familiale de couverture depuis 20 ans dans le Morbihan. Ardoise, zinc, aluminium, expertise locale et savoir-faire traditionnel.",
-  keywords: "couvreur Lanester, entreprise couverture Morbihan, couvreur Lorient, artisan couverture Bretagne",
+  title: "À propos, Damien Corrignan, couvreur indépendant à Lanester",
+  description: "Découvrez Damien Corrignan, couvreur indépendant depuis septembre 2024 dans le Morbihan. Ardoise, zinc, aluminium, expertise locale et savoir-faire traditionnel à Lorient, Ploemeur, Auray.",
+  keywords: "Damien Corrignan, couvreur Lanester, couvreur indépendant Morbihan, couvreur Lorient, artisan couverture Bretagne, Corrignan Couverture",
   openGraph: {
-    title: "À propos, Corrignan Couverture",
-    description: "Entreprise familiale de couverture depuis 20 ans dans le Morbihan. Expertise locale et savoir-faire traditionnel.",
+    title: "À propos, Damien Corrignan, Corrignan Couverture",
+    description: "Couvreur indépendant depuis septembre 2024 dans le Morbihan. Expertise locale et savoir-faire traditionnel.",
     type: "website",
   },
 };
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const valeurs = [
   {
     title: "Savoir-faire local",
-    description: "Depuis 20 ans dans le Morbihan, nous connaissons le climat breton et les spécificités de chaque région.",
+    description: "Depuis septembre 2024 dans le Morbihan, je connais le climat breton et les spécificités de chaque région autour de Lorient.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#f0d080]">
         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
@@ -58,28 +58,10 @@ const valeurs = [
 
 const equipe = [
   {
-    nom: "Jean Corrignan",
-    role: "Gérant & Couvreur",
-    description: "30 ans d'expérience en couverture. Spécialiste ardoise et zinc. Formé aux techniques traditionnelles et modernes.",
+    nom: "Damien Corrignan",
+    role: "Couvreur indépendant",
+    description: "Artisan couvreur expérimenté, spécialisé en ardoise, zinc, bac acier et aluminium. Intervention dans tout le bassin lorientais : Lorient, Lanester, Ploemeur, Hennebont, Quéven, Auray.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop",
-  },
-  {
-    nom: "Marie Corrignan",
-    role: "Administration & Relation client",
-    description: "Gestion administrative et relation client. Elle s'assure que chaque projet se déroule dans les meilleures conditions.",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop",
-  },
-  {
-    nom: "Pierre Le Goff",
-    role: "Couvreur senior",
-    description: "15 ans d'expérience. Spécialiste des toitures complexes et des chantiers patrimoniaux.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop",
-  },
-  {
-    nom: "Thomas Martin",
-    role: "Couvreur",
-    description: "8 ans d'expérience. Polyvalent sur tous matériaux : ardoise, zinc, bac acier, aluminium.",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop",
   },
 ];
 
@@ -105,27 +87,27 @@ const certifications = [
 const faqs: FaqItem[] = [
   {
     question: "Depuis quand existe Corrignan Couverture ?",
-    answer: "Corrignan Couverture a été créée en 2004 par Jean Corrignan. L'entreprise est basée à Lanester depuis ses débuts et intervient dans tout le bassin lorientais et le Morbihan.",
+    answer: "Damien Corrignan a lancé son activité de couvreur indépendant le 3 septembre 2024. Basé à Lanester, il intervient dans tout le bassin lorientais et le Morbihan.",
   },
   {
     question: "Êtes-vous une entreprise familiale ?",
-    answer: "Oui, Corrignan Couverture est une entreprise familiale. Jean et Marie Corrignan dirigent l'entreprise ensemble, avec une équipe de couvreurs expérimentés qui font partie de la famille professionnelle depuis de nombreuses années.",
+    answer: "Corrignan Couverture est une entreprise individuelle dirigée par Damien Corrignan. En tant qu'artisan indépendant, je m'occupe personnellement de chaque chantier pour garantir la qualité.",
   },
   {
     question: "Quelle est votre zone d'intervention ?",
-    answer: "Nous intervenons principalement dans le bassin lorientais : Lorient, Lanester, Hennebont, Ploemeur, Quéven. Nous nous déplaçons également sur l'ensemble du Morbihan (Auray, Vannes, etc.) selon la nature du chantier.",
+    answer: "J'interviens principalement dans le bassin lorientais : Lorient, Lanester, Hennebont, Ploemeur, Quéven, Auray, Vannes. Je me déplace également sur l'ensemble du Morbihan selon la nature du chantier.",
   },
   {
     question: "Travaillez-vous avec des sous-traitants ?",
-    answer: "Non, nous n'avons pas recours à des sous-traitants. Notre propre équipe réalise l'ensemble des travaux, de la préparation à la finition. Cela garantit la qualité et la cohérence de chaque chantier.",
+    answer: "Non, je réalise l'ensemble des travaux moi-même, de la préparation à la finition. Cela garantit la qualité et la cohérence de chaque chantier.",
   },
   {
     question: "Comment choisissez-vous vos matériaux ?",
-    answer: "Nous travaillons avec des fournisseurs locaux et nationaux reconnus pour leur qualité. Nous privilégions les matériaux durables et adaptés au climat breton : ardoise espagnole, zinc français, aluminium européen, etc.",
+    answer: "Je travaille avec des fournisseurs locaux et nationaux reconnus pour leur qualité. Je privilégie les matériaux durables et adaptés au climat breton : ardoise espagnole, zinc français, aluminium européen, etc.",
   },
   {
     question: "Proposez-vous des formations ou stages ?",
-    answer: "Oui, nous accueillons régulièrement des apprentis et stagiaires. C'est important pour nous de transmettre le savoir-faire traditionnel de la couverture et de former la nouvelle génération d'artisans.",
+    answer: "En tant qu'artisan indépendant, je suis ouvert à accueillir des apprentis ou stagiaires pour transmettre le savoir-faire de la couverture.",
   },
 ];
 
@@ -145,8 +127,8 @@ export default function AProposPage() {
           </h1>
 
           <p className="text-[#b8b09a] max-w-2xl mx-auto">
-            Entreprise familiale depuis 2004, spécialisée dans la couverture du Morbihan.
-            Savoir-faire local, qualité et transparence, nos valeurs depuis le premier jour.
+            Artisan couvreur indépendant depuis septembre 2024, spécialisé dans la couverture du Morbihan.
+            Savoir-faire local, qualité et transparence, mes valeurs depuis le premier jour.
           </p>
         </div>
       </section>
@@ -327,7 +309,7 @@ export default function AProposPage() {
             </Link>
 
             <a
-              href="tel:0297000000"
+              href="tel:0604107018"
               className="flex items-center gap-2 text-sm font-medium text-[#f0d080] hover:text-white transition px-5 py-3 rounded-lg border border-[#c9a84c33] bg-[#0f0f0f]"
             >
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f0d080" strokeWidth="2">
