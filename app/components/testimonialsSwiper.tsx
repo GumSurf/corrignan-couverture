@@ -181,7 +181,7 @@ export default function TestimonialsSwiper() {
 
                   <div>
                     <p className="font-medium text-white text-sm">{t.name}</p>
-                    <span className="text-xs text-[#7a7a7a]">{t.location}</span>
+                    {/*<span className="text-xs text-[#7a7a7a]">{t.location}</span>*/}
                   </div>
 
                 </div>
