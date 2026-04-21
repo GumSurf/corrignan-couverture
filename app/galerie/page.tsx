@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Galerie from './galerie';
 import GalerieHero from './galerieHero';
 import GalerieCta from './galerieCta';
+import GalerieWrapper from './galerieWrapper';
 
 export const metadata: Metadata = {
   title: "Galerie — Corrignan Couverture, couvreur à Lanester",
@@ -20,7 +21,7 @@ export default function RealisationsPage() {
 
       <GalerieHero />
 
-      <Galerie />
+      <GalerieWrapper />
 
       <GalerieCta />
 
