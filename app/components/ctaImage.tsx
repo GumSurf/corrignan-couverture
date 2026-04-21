@@ -46,7 +46,7 @@ export default function CtaImage() {
             className="mb-4 text-4xl tracking-tight font-extrabold text-white leading-tight"
           >
             Une toiture qui tient dans le temps,{" "}
-            <span className="text-[#f0d080]">posée par des gens du coin.</span>
+            <span className="text-[#f0d080]">posée par des professionel.</span>
           </motion.h2>
 
           <motion.p

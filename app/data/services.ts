@@ -25,7 +25,7 @@ export type Service = {
 
   description2: ServiceDescription2;
 
-  beforeAfter: ServiceBeforeAfter;
+  beforeAfter?: ServiceBeforeAfter;
 
   points: string[];
 
@@ -56,12 +56,12 @@ export const services: Record<ServiceKey, Service> = {
     description2: {
       title: "Ardoise naturelle ou artificielle : laquelle choisir ?",
       body: "L'ardoise naturelle, extraite en carrière, offre une longévité incomparable, jusqu'à 150 ans, et une esthétique authentique recherchée sur les maisons de caractère. L'ardoise artificielle (fibrociment) est plus accessible financièrement, plus légère, et convient très bien aux rénovations où la charpente ne peut pas supporter un poids trop important. On vous conseille sur le choix le plus adapté à votre maison et à votre budget lors de la visite de chantier.",
-      image: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1200&auto=format&fit=crop",
+      image: "/images/chantiers/ardoise/ardoise10.jpg",
       imageAlt: "Détail de pose d'ardoise naturelle sur une toiture bretonne",
     },
     beforeAfter: {
-      before: "/images/chantiers/toiture-avant.jpg",
-      after: "/images/chantiers/toiture-apres.jpg",
+      before: "/images/chantiers/ardoise/ardoise_avant.jpeg",
+      after: "/images/chantiers/ardoise/ardoise_apres.jpeg",
       caption: "Rénovation complète d'une toiture en ardoise, Lorient",
     },
     points: [
@@ -71,7 +71,7 @@ export const services: Record<ServiceKey, Service> = {
       "Entretien minimal sur toute la durée de vie",
       "Pose en neuf ou rénovation complète / partielle",
     ],
-    image: "https://images.unsplash.com/photo-1591955506264-3f5a6834570a?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/chantiers/ardoise/ardoise_hero.jpg",
     imageAlt: "Toiture en ardoise posée par Corrignan Couverture dans le Morbihan",
     faqs: [
       {
@@ -88,7 +88,7 @@ export const services: Record<ServiceKey, Service> = {
       },
       {
         question: "Quel est le prix d'une toiture en ardoise ?",
-        answer: "Le prix varie selon la surface, l'accessibilité du toit, l'état de la charpente et le type d'ardoise choisi. Pour avoir une estimation précise, on se déplace gratuitement pour évaluer votre chantier et vous remettre un devis détaillé sous 48h.",
+        answer: "Le prix varie selon la surface, l'accessibilité du toit, l'état de la charpente et le type d'ardoise choisi. Pour avoir une estimation précise, on se déplace gratuitement pour évaluer votre chantier et vous remettre un devis détaillé.",
       },
       {
         question: "Intervenez-vous pour des réparations ponctuelles en ardoise ?",
@@ -106,13 +106,13 @@ export const services: Record<ServiceKey, Service> = {
     description2: {
       title: "Zinc naturel ou prépatiné : quelle différence ?",
       body: "Le zinc naturel arrive brillant en sortie d'usine et développe progressivement sa patine gris-bleu caractéristique au contact de l'air, c'est ce qu'on appelle l'oxydation naturelle. Le zinc prépatiné, lui, est traité en usine pour avoir d'emblée cet aspect mat anthracite ou bleu-gris. C'est souvent le choix des architectes qui veulent un rendu homogène dès la pose. Les deux offrent les mêmes performances techniques : une longévité de 80 à 100 ans et une résistance totale à la corrosion.",
-      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
+      image: "/images/chantiers/zinc/zinc1.jpg",
       imageAlt: "Détail de toiture en zinc prépatiné anthracite",
     },
     beforeAfter: {
-      before: "https://images.unsplash.com/photo-1558618047-f4b3a2c6d3c4?q=80&w=800&auto=format&fit=crop",
-      after: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop",
-      caption: "Réfection d'une toiture complexe en zinc, Auray",
+      before: "/images/chantiers/zinc/zinc_avant.jpeg",
+      after: "/images/chantiers/zinc/zinc_apres.jpeg",
+      caption: "Réfection d'une toiture complexe en zinc, Locmiquélic",
     },
     points: [
       "Durée de vie de 80 à 100 ans avec entretien minimal",
@@ -121,7 +121,7 @@ export const services: Record<ServiceKey, Service> = {
       "Adapté aux formes complexes et aux faibles pentes",
       "Utilisé aussi pour gouttières, lucarnes, noues",
     ],
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/chantiers/zinc/zinc_hero.jpg",
     imageAlt: "Couverture en zinc posée par Corrignan Couverture",
     faqs: [
       {
@@ -156,12 +156,12 @@ export const services: Record<ServiceKey, Service> = {
     description2: {
       title: "Bac acier : bien plus que le hangar agricole",
       body: "Si le bac acier reste la référence pour les bâtiments agricoles et industriels, il s'est largement imposé ces dernières années dans la construction résidentielle, extensions de maison, carports, vérandas et même toitures principales de constructions contemporaines. Les profils modernes et la large palette de couleurs RAL permettent une intégration esthétique soignée dans tous les environnements. Côté performance, il résiste très bien aux vents et à la neige, et sa légèreté ne surcharge pas la structure.",
-      image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=1200&auto=format&fit=crop",
+      image: "/images/chantiers/bacAcier/bac_acier5.jpg",
       imageAlt: "Bâtiment couvert en bac acier dans le Morbihan",
     },
     beforeAfter: {
-      before: "https://images.unsplash.com/photo-1558618047-f4b3a2c6d3c4?q=80&w=800&auto=format&fit=crop",
-      after: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      before: "/images/chantiers/bacAcier/bac_acier_avant.jpeg",
+      after: "/images/chantiers/bacAcier/bac_acier_apres.jpeg",
       caption: "Couverture d'un bâtiment agricole en bac acier, Hennebont",
     },
     points: [
@@ -171,7 +171,7 @@ export const services: Record<ServiceKey, Service> = {
       "Rapport qualité-prix très compétitif",
       "Bâtiments agricoles, industriels, extensions, maisons",
     ],
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/chantiers/bacAcier/bac_acier_hero.jpg",
     imageAlt: "Toiture bac acier posée par Corrignan Couverture dans le Morbihan",
     faqs: [
       {
@@ -206,12 +206,12 @@ export const services: Record<ServiceKey, Service> = {
     description2: {
       title: "L'aluminium, le choix idéal en bord de mer",
       body: "Le Morbihan, c'est 250 km de côtes, et le sel marin, c'est l'ennemi numéro un des toitures métalliques. L'aluminium est naturellement insensible à la corrosion : pas d'oxydation, pas d'entretien, pas de peinture à refaire tous les dix ans. C'est pourquoi il est particulièrement recommandé pour les maisons situées à moins de 5 km de la mer. Sa légèreté (3 fois moins lourd que l'acier) en fait aussi un excellent choix pour les extensions ou les structures qui ne peuvent pas supporter beaucoup de poids supplémentaire.",
-      image: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1200&auto=format&fit=crop",
+      image: "/images/chantiers/aluminium/aluminium3.jpg",
       imageAlt: "Toiture aluminium sur maison contemporaine en bord de mer",
     },
     beforeAfter: {
-      before: "https://images.unsplash.com/photo-1558618047-f4b3a2c6d3c4?q=80&w=800&auto=format&fit=crop",
-      after: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop",
+      before: "/images/chantiers/aluminium/aluminium_avant.jpg",
+      after: "/images/chantiers/aluminium/aluminium_apres.jpg",
       caption: "Toiture-terrasse en aluminium, Quiberon",
     },
     points: [
@@ -221,7 +221,7 @@ export const services: Record<ServiceKey, Service> = {
       "Matériau 100% recyclable",
       "Idéal pour toits plats, terrasses et bardages",
     ],
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/chantiers/aluminium/aluminium_hero.jpg",
     imageAlt: "Pose aluminium par Corrignan Couverture",
     faqs: [
       {
@@ -256,13 +256,8 @@ export const services: Record<ServiceKey, Service> = {
     description2: {
       title: "Bardage et isolation par l'extérieur : un double bénéfice",
       body: "Poser un bardage, c'est souvent l'occasion de réaliser une isolation thermique par l'extérieur (ITE) en même temps, et c'est là que l'investissement devient vraiment intéressant. On pose d'abord un isolant sur la façade existante, puis on fixe le bardage par-dessus. Résultat : votre maison est mieux isolée, votre façade est protégée des intempéries et votre consommation d'énergie baisse. Une solution particulièrement pertinente en Bretagne où l'humidité et le vent sollicitent fortement les façades.",
-      image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop",
+      image: "/images/chantiers/bardage/bardage1.jpg",
       imageAlt: "Pose de bardage métallique sur façade bretonne",
-    },
-    beforeAfter: {
-      before: "https://images.unsplash.com/photo-1558618047-f4b3a2c6d3c4?q=80&w=800&auto=format&fit=crop",
-      after: "https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=800&auto=format&fit=crop",
-      caption: "Rénovation de façade avec bardage zinc, Hennebont",
     },
     points: [
       "Améliore l'isolation thermique et acoustique",
@@ -271,7 +266,7 @@ export const services: Record<ServiceKey, Service> = {
       "Large choix de finitions et de couleurs",
       "Compatible avec toutes constructions : maisons, bâtiments, extensions",
     ],
-    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/chantiers/bardage/bardage_hero.jpg",
     imageAlt: "Bardage extérieur posé par Corrignan Couverture",
     faqs: [
       {

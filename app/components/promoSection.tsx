@@ -49,8 +49,8 @@ export default function PromoSection() {
             variants={fadeUp}
             className="mb-3 text-2xl font-bold leading-tight tracking-tight text-white md:text-4xl"
           >
-            Votre devis toiture gratuit <br />
-            <span className="text-[#f0d080]">sous 48h, sans engagement.</span>
+            Votre devis toiture gratuit, <br />
+            <span className="text-[#f0d080]">sans engagement.</span>
           </motion.h2>
 
           <motion.p

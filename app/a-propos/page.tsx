@@ -7,7 +7,7 @@ import { type FaqItem } from "../components/faq";
 
 export const metadata: Metadata = {
   title: "À propos, Damien Corrignan, couvreur indépendant à Lanester",
-  description: "Découvrez Damien Corrignan, couvreur indépendant depuis septembre 2024 dans le Morbihan. Ardoise, zinc, aluminium, expertise locale et savoir-faire traditionnel à Lorient, Ploemeur, Auray.",
+  description: "Découvrez Damien Corrignan, couvreur indépendant depuis septembre 2024 dans le Morbihan. Ardoise, zinc, aluminium, expertise locale et savoir-faire traditionnel à Lorient, Ploemeur, Locmiquélic.",
   keywords: "Damien Corrignan, couvreur Lanester, couvreur indépendant Morbihan, couvreur Lorient, artisan couverture Bretagne, Corrignan Couverture",
   openGraph: {
     title: "À propos, Damien Corrignan, Corrignan Couverture",
@@ -60,7 +60,7 @@ const equipe = [
   {
     nom: "Damien Corrignan",
     role: "Couvreur indépendant",
-    description: "Artisan couvreur expérimenté, spécialisé en ardoise, zinc, bac acier et aluminium. Intervention dans tout le bassin lorientais : Lorient, Lanester, Ploemeur, Hennebont, Quéven, Auray.",
+    description: "Artisan couvreur expérimenté, spécialisé en ardoise, zinc, bac acier et aluminium. Intervention dans tout le bassin lorientais : Lorient, Lanester, Ploemeur, Hennebont, Quéven, Locmiquélic.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop",
   },
 ];
@@ -95,7 +95,7 @@ const faqs: FaqItem[] = [
   },
   {
     question: "Quelle est votre zone d'intervention ?",
-    answer: "J'interviens principalement dans le bassin lorientais : Lorient, Lanester, Hennebont, Ploemeur, Quéven, Auray, Vannes. Je me déplace également sur l'ensemble du Morbihan selon la nature du chantier.",
+    answer: "J'interviens principalement dans le bassin lorientais : Lorient, Lanester, Hennebont, Ploemeur, Quéven, Locmiquélic, L'Armor Plage. Je me déplace également sur l'ensemble du Morbihan selon la nature du chantier.",
   },
   {
     question: "Travaillez-vous avec des sous-traitants ?",
@@ -285,7 +285,7 @@ export default function AProposPage() {
       <FAQ
         faqs={faqs}
         title="Questions sur Corrignan Couverture"
-        subtitle="Tout savoir sur notre entreprise, notre équipe et notre façon de travailler, on se déplace sur Lorient, Lanester, Auray et tout le bassin lorientais."
+        subtitle="Tout savoir sur notre entreprise, notre équipe et notre façon de travailler, on se déplace sur Lorient, Lanester, Locmiquélic et tout le bassin lorientais."
       />
 
       {/* ── CTA ── */}

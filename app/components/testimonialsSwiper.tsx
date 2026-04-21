@@ -11,30 +11,37 @@ import 'swiper/css/pagination'
 
 const testimonials = [
   {
-    name: "Michel L.",
-    location: "Lorient",
-    text: "Corrignan est intervenu rapidement suite à une fuite après la tempête. Travail soigné, équipe sérieuse et devis respecté à l'euro près. Je recommande sans hésiter.",
+    name: "Erwann Margana",
+    text: "Très professionnel, fiable, ça faisait littéralement 1 an que je me battais avec des couvreurs pour réparer ma toiture, de tous ceux que j'ai vu, j'ai vite compris que Damien c'était pas le même niveau que tous les autres, je recommande Corda Couverture à tous ceux qui cherchent un couvreur pour leur toiture",
   },
   {
-    name: "Sandrine B.",
-    location: "Auray",
-    text: "Réfection complète de notre toiture en ardoise. Le résultat est impeccable, la maison est méconnaissable. Très à l'écoute et ponctuel du début à la fin.",
+    name: "Jean-Michel Doreau",
+    text: "Super pro et à l'écoute, travail de qualité et dans les délais convenus au départ. Je recommande vivement cet artisan."
   },
   {
-    name: "Jean-Yves K.",
-    location: "Lanester",
-    text: "On a fait appel à eux pour du bardage sur notre extension. Finition nickel, délai tenu. On sent que c'est des gens du métier qui prennent leur travail au sérieux.",
+    name: "Tony Le discot",
+    text: "Très professionnel, fiable. Travaux effectués en temps et en heure. Je recommande fortement 👍👍👍"
   },
   {
-    name: "Martine et Claude R.",
-    location: "Hennebont",
-    text: "Devis clair, pas de surprise sur la facture finale. L'équipe est propre sur le chantier, ils ont tout laissé rangé derrière eux. C'est rare, ça mérite d'être dit.",
+    name: "kimonocesium",
+    text: "Personne très sympathique et à l'écoute, très réactif et travail propre. Je recommande cet artisan 👌"
   },
   {
-    name: "Florian M.",
-    location: "Vannes",
-    text: "Bac acier sur un bâtiment agricole. Très bon rapport qualité-prix, travail rapide et bien fait. N'hésitez pas à les appeler, ils sont de bon conseil.",
+    name: "Yoann Mekri",
+    text: "Très professionnel et rapide. Chantier soigné et dans les délais. Je recommande."
   },
+  {
+    name: "Raphaëlle Salama",
+    text: "Réactif, professionnel, à l'écoute. Je recommande vivement."
+  },
+  {
+    name: "Marc BOUGER",
+    text: "Je le recommande vivement. Travail soigné et dans les temps."
+  },
+  {
+    name: "R. M.",
+    text: "Réactif et très pro, donc RAS."
+  }
 ]
 
 export default function TestimonialsSwiper() {
@@ -92,7 +99,7 @@ export default function TestimonialsSwiper() {
               Ce que disent nos clients
             </motion.h2>
             <motion.p className="mt-2 text-[#b8b09a] text-sm">
-              Lorient · Auray · Vannes · Bassin lorientais
+              Lorient · Locmiquélic · L&apos;Armor Plage · Bassin lorientais
             </motion.p>
 
             <motion.div
@@ -183,9 +190,6 @@ export default function TestimonialsSwiper() {
             ))}
 
           </div>
-
-          {/* pagination (optionnel styling si tu l’utilises) */}
-          <div className="swiper-pagination mt-8 !relative"></div>
 
         </div>
 

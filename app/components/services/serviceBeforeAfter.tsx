@@ -19,7 +19,7 @@ export default function ServiceBeforeAfter({ items }: Props) {
 
   return (
     <section className="py-12 px-4 max-w-screen-xl mx-auto space-y-10">
-      
+
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -41,13 +41,12 @@ export default function ServiceBeforeAfter({ items }: Props) {
           viewport={{ once: true }}
           className="space-y-3"
         >
-          <div className="rounded-2xl overflow-hidden">
+          <div className="relative w-full aspect-3/2 overflow-hidden rounded-2xl">
             <ReactBeforeSliderComponent
-              firstImage={{ imageUrl: item.before }}
-              secondImage={{ imageUrl: item.after }}
+              firstImage={{ imageUrl: item.after }}
+              secondImage={{ imageUrl: item.before }}
             />
           </div>
-
           <p className="text-[#b8b09a] text-sm">
             {item.caption}
           </p>

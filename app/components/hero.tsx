@@ -50,7 +50,7 @@ const stagger = useStagger(0.08);
           className="mt-4 text-center text-[#b8b09a] max-w-lg text-sm sm:text-base leading-relaxed"
         >
           Ardoise, zinc, bac acier, aluminium, bardage, Corrignan Couverture intervient sur Lanester,
-          Lorient, Ploemeur, Hennebont, Quéven, Auray, Vannes et tout le bassin lorientais. Devis gratuit sous 48h.
+          Lorient, Ploemeur, Hennebont, Quéven, Locmiquélic, L'Armor Plage et tout le bassin lorientais. Devis gratuit.
         </motion.p>
 
         {/* Services */}

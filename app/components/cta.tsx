@@ -52,7 +52,7 @@ export default function Cta() {
           variants={item}
           className="mb-8 text-[#b8b09a] md:text-lg leading-relaxed"
         >
-          Devis gratuit sous 48h, sans engagement. On se déplace sur Lorient, Lanester, Auray
+          On se déplace sur Lorient, Lanester, Locmiquélic
           et tout le bassin lorientais.
         </motion.p>
 

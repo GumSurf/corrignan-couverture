@@ -1,6 +1,11 @@
 'use client';
 
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
+const NEXT_PUBLIC_EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+const NEXT_PUBLIC_EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+const NEXT_PUBLIC_EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -14,6 +19,7 @@ export default function ContactForm() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -25,16 +31,20 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError('');
 
-    // Simulation d'envoi
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    const templateParams = {
+      nom: formData.nom,
+      email: formData.email,
+      telephone: formData.telephone,
+      typeProjet: formData.typeProjet,
+      sujet: formData.sujet,
+      message: formData.message,
+    };
 
-    setIsSubmitting(false);
-    setSubmitted(true);
-
-    // Reset form après 3 secondes
-    setTimeout(() => {
-      setSubmitted(false);
+    try {
+      await emailjs.send(NEXT_PUBLIC_EMAILJS_SERVICE_ID, NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, templateParams, NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+      setSubmitted(true);
       setFormData({
         nom: '',
         email: '',
@@ -43,7 +53,16 @@ export default function ContactForm() {
         message: '',
         typeProjet: '',
       });
-    }, 3000);
+
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 3000);
+    } catch (err) {
+      console.error('EmailJS error:', err);
+      setError('Une erreur est survenue lors de l’envoi du message. Veuillez réessayer.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -184,6 +203,10 @@ export default function ContactForm() {
           {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
         </button>
       </div>
+
+      {error ? (
+        <p className="text-sm text-red-400 mt-4 text-center">{error}</p>
+      ) : null}
 
       <p className="text-xs text-[#666] mt-4 text-center">
         * Champs obligatoires. Nous nous engageons à ne jamais partager vos informations personnelles.

@@ -22,7 +22,7 @@ const services = [
   {
     slug: "ardoise",
     label: "Ardoise",
-    image: "/images/services/ardoise.jpeg",
+    image: "/images/chantiers/ardoise/ardoise_hero.jpg",
     short:
       "La couverture traditionnelle bretonne par excellence. Naturelle ou artificielle, l'ardoise offre une durabilité exceptionnelle et s'intègre parfaitement dans le paysage du Morbihan.",
     tags: ["Ardoise naturelle", "Ardoise artificielle", "Rénovation", "Neuf"],
@@ -30,7 +30,7 @@ const services = [
   {
     slug: "zinc",
     label: "Zinc",
-    image: "/images/services/zinc.png",
+    image: "/images/chantiers/zinc/zinc_hero.jpg",
     short:
       "Matériau noble et durable, le zinc est idéal pour les toitures complexes, les noues, les lucarnes et les façades.",
     tags: ["Zinc naturel", "Zinc prépatiné", "Noues & raccords", "Lucarnes"],
@@ -38,7 +38,7 @@ const services = [
   {
     slug: "bac-acier",
     label: "Bac acier",
-    image: "/images/services/bac-acier.jpg",
+    image: "/images/chantiers/bacAcier/bac_acier_hero.jpg",
     short:
       "Solution économique et rapide à poser, le bac acier est parfait pour les bâtiments agricoles et extensions.",
     tags: ["Agricole", "Extensions", "Faible pente", "Grandes surfaces"],
@@ -46,14 +46,14 @@ const services = [
   {
     slug: "aluminium",
     label: "Aluminium",
-    image: "/images/services/aluminium.jpg",
+    image: "/images/chantiers/aluminium/aluminium_hero.jpg",
     short:
       "Léger, inoxydable et sans entretien, idéal pour les projets modernes.",
     tags: ["Toiture plate", "Terrasses", "Anti-corrosion", "Bord de mer"],
   },
   {
     slug: "bardage",
-    image: "/images/services/bardage.jpg",
+    image: "/images/chantiers/bardage/bardage_hero.jpg",
     label: "Bardage",
     short:
       "Le bardage habille et protège vos façades tout en améliorant l'isolation.",
@@ -74,15 +74,15 @@ export default function ServicesPage() {
       >
         <div className="mx-auto max-w-screen-xl text-center">
           <p className="text-xs tracking-widest uppercase text-[#c9a84c] mb-3">
-            Nos métiers
+            Nos métiers de couvreur
           </p>
 
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-[#f0d080]">
-            Nos services de couverture
+            Services de couverture et toiture au Morbihan
           </h1>
 
           <p className="text-[#b8b09a] max-w-2xl mx-auto">
-            Ardoise, zinc, bac acier, aluminium ou bardage, on maîtrise tous les matériaux.
+            Spécialiste en couverture de toiture dans le Morbihan : ardoise, zinc, bac acier, aluminium et bardage. Rénovation et pose neuve de toitures pour particuliers et professionnels.
           </p>
         </div>
       </motion.section>
@@ -152,11 +152,11 @@ export default function ServicesPage() {
       >
         <div className="mx-auto max-w-screen-sm text-center">
           <h2 className="text-3xl font-extrabold mb-4 text-[#f0d080]">
-            Un projet ? On se déplace.
+            Besoin d'un couvreur au Morbihan ?
           </h2>
 
           <p className="text-[#b8b09a] mb-6">
-            Devis gratuit sous 48h sur tout le Morbihan.
+            Devis gratuit pour vos travaux de toiture et couverture.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">

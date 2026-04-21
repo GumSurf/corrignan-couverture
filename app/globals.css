@@ -65,5 +65,9 @@ html, body {
 }
 
 .swiper-slide.swiper-slide-active {
-  border-color: rgb(79 70 229) !important;
+  border-color: var(--color-slate-500) !important;
+}
+
+.before-after-slider {
+  height: 100%;
 }

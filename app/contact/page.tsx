@@ -5,11 +5,11 @@ import OtherServiceCard from "../components/otherServiceCard";
 
 export const metadata: Metadata = {
   title: "Contact, Damien Corrignan, couvreur indépendant à Lanester",
-  description: "Contactez Damien Corrignan, couvreur indépendant à Lanester, pour votre projet de couverture. Devis gratuit sous 48h. Lorient, Ploemeur, Auray, Vannes, Morbihan.",
+  description: "Contactez Damien Corrignan, couvreur indépendant à Lanester, pour votre projet de couverture. Lorient, Ploemeur, Locmiquélic, L'Armor Plage, Morbihan.",
   keywords: "contact Damien Corrignan, devis couverture Morbihan, couvreur Lanester, contact Corrignan Couverture, couvreur Lorient, couvreur Ploemeur",
   openGraph: {
     title: "Contact, Damien Corrignan, Corrignan Couverture",
-    description: "Contactez-moi pour votre projet de couverture. Devis gratuit sous 48h.",
+    description: "Contactez-moi pour votre projet de couverture.",
     type: "website",
   },
 };
@@ -59,7 +59,7 @@ const coordonnees = [
   },
   {
     titre: "Zone d'intervention",
-    valeur: "Lorient, Lanester, Auray,\nHennebont, Vannes, Morbihan",
+    valeur: "Lorient, Lanester, Locmiquélic,\nHennebont, L'Armor Plage, Morbihan",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#f0d080]">
         <path d="M3 7V5a2 2 0 012-2h2l2-2h4l2 2h2a2 2 0 012 2v2l-2 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V9L3 7z"/>
@@ -139,7 +139,6 @@ export default function ContactPage() {
           </h1>
 
           <p className="text-[#b8b09a] max-w-2xl mx-auto">
-            Devis gratuit sous 48h, visite de chantier offerte.
             Contactez-nous pour discuter de votre couverture.
           </p>
         </div>
@@ -158,7 +157,7 @@ export default function ContactPage() {
               </h2>
               <p className="text-[#b8b09a] mb-8 leading-relaxed">
                 Décrivez votre projet, posez vos questions ou demandez un devis.
-                Nous vous répondrons dans les 24h.
+                Nous vous répondrons sous 7 jours.
               </p>
 
               <ContactForm />

@@ -16,7 +16,7 @@ export default function ServiceCTA({ article }: { article: string }) {
         </h2>
 
         <p className="text-[#b8b09a] mb-6">
-          Devis gratuit sous 48h
+          Devis gratuit
         </p>
 
         <Link href="/contact" className="bg-gold-500 px-6 py-3 rounded-lg">

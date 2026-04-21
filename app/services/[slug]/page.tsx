@@ -32,7 +32,7 @@ export async function generateMetadata({
 
   return {
     title: `${service.label}, Corrignan Couverture, couvreur à Lanester`,
-    description: `Corrignan Couverture pose ${service.article} sur Lorient, Lanester, Auray et tout le bassin lorientais. Devis gratuit sous 48h.`,
+    description: `Corrignan Couverture pose ${service.article} sur Lorient, Lanester, Locmiquélic et tout le bassin lorientais. Devis gratuit`,
   };
 }
 
@@ -56,7 +56,7 @@ export default async function Page({
 
       <ServiceImageText data={service.description2} />
 
-      <ServiceBeforeAfter items={[service.beforeAfter]} />
+      {service.beforeAfter && <ServiceBeforeAfter items={[service.beforeAfter]} />}
 
       <TestimonialsSwiper />
 

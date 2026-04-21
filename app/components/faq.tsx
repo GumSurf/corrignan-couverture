@@ -12,12 +12,12 @@ export const defaultFaqs: FaqItem[] = [
   {
     question: "Dans quelle zone intervenez-vous ?",
     answer:
-      "On intervient principalement sur le bassin lorientais : Lorient, Lanester, Hennebont, Auray, Ploemeur, Quéven et les communes alentour. On se déplace aussi sur l'ensemble du Morbihan selon la nature du chantier. N'hésitez pas à nous appeler pour en discuter.",
+      "On intervient principalement sur le bassin lorientais : Lorient, Lanester, Hennebont, Locmiquélic, Ploemeur, Quéven et les communes alentour. On se déplace aussi sur l'ensemble du Morbihan selon la nature du chantier. N'hésitez pas à nous appeler pour en discuter.",
   },
   {
     question: "Est-ce que vous faites des devis gratuits ?",
     answer:
-      "Oui, le devis est toujours gratuit et sans engagement. On se déplace pour voir le chantier, évaluer l'état de la toiture et vous remettre un devis clair et détaillé sous 48h.",
+      "Oui, le devis est toujours gratuit et sans engagement. On se déplace pour voir le chantier, évaluer l'état de la toiture et vous remettre un devis clair et détaillé.",
   },
   {
     question: "Quels types de toitures prenez-vous en charge ?",
