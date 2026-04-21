@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { CheckCircle } from "lucide-react";
 
 type Service = {
   label: string;
@@ -21,7 +22,7 @@ export default function ServiceIntro({ service }: Props) {
   return (
     <section className="py-12 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-start">
-        
+
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -59,9 +60,10 @@ export default function ServiceIntro({ service }: Props) {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className="text-[#b8b09a]"
+                className="text-[#b8b09a] flex items-center gap-2"
               >
-                ✔ {point}
+                <CheckCircle className="w-4 h-4 text-[#c9a84c]" />
+                {point}
               </motion.li>
             ))}
           </ul>
