@@ -14,12 +14,8 @@ import { type FaqItem } from "../components/faq";
 // ── Helpers d'animation ──────────────────────────────────────────────────────
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 32 },
-  visible: (i = 0) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1], delay: i * 0.08 },
-  }),
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0 },
 };
 
 const fadeIn = {
@@ -29,11 +25,14 @@ const fadeIn = {
 
 const scaleIn = {
   hidden: { opacity: 0, scale: 0.92 },
-  visible: (i = 0) => ({
+  visible: {
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: i * 0.1 },
-  }),
+    transition: {
+      duration: 0.5,
+      ease: "easeOut" as const,
+    },
+  },
 };
 
 /** Wrapper qui déclenche les animations quand la section entre dans le viewport */
@@ -249,8 +248,8 @@ export default function AProposPage() {
 
             <InViewSection>
               <motion.h2
-                className="mb-8 text-3xl md:text-4xl font-bold text-white text-center"
                 variants={fadeUp}
+                className="mb-8 text-3xl md:text-4xl font-bold text-white text-center"
                 custom={0}
               >
                 Une histoire de passion et de savoir-faire
