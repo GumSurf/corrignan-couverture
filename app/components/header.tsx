@@ -19,7 +19,6 @@ const services = {
 
 const navLinks = [
   { label: "Accueil", href: "/" },
-  { label: "Services", href: "/services" },
   { label: "Galerie", href: "/galerie" },
   { label: "Zone d'intervention", href: "/zone-intervention" },
   { label: "À propos", href: "/a-propos" },
@@ -51,7 +50,7 @@ export default function Header() {
     <div className="bg-night-800 border-b border-[#c9a84c33] sticky top-0 z-50">
       {/* ─── Topbar ─── */}
       <div className="hidden sm:flex justify-center gap-8 px-4 py-1.5 text-xs bg-[#0f0f0f] text-gold-500">
-        <span className="opacity-75">Lorient · Lanester · Locmiquélic · L'Armor Plage · Morbihan</span>
+        <span className="opacity-75">Lorient · Lanester · Locmiquélic · L&apos;Armor Plage · Morbihan</span>
         <span className="font-semibold tracking-wide text-[#f0d080]">06 04 10 70 18</span>
         <span className="opacity-75">Devis gratuit</span>
       </div>
@@ -59,7 +58,7 @@ export default function Header() {
       {/* ─── Nav principale ─── */}
       <header className="bg-night-800 border-b border-[#c9a84c33] sticky top-0 z-50">
         <nav className="px-4 lg:px-6">
-          <div className="flex items-center justify-between mx-auto max-w-screen-xl h-[76px]">
+          <div className="flex items-center justify-between mx-auto max-w-7xl h-19">
 
             {/* ── Logo ── */}
             <Link href="/" className="flex items-center gap-3.5 shrink-0">
@@ -72,7 +71,7 @@ export default function Header() {
                   priority
                 />
               </div>
-              <div>
+              <div className="md:hidden">
                 <span className="block text-[15px] font-semibold text-[#f0d080] leading-tight tracking-wide">
                   Corrignan Couverture
                 </span>
@@ -83,12 +82,12 @@ export default function Header() {
             </Link>
 
             {/* ── Menu desktop ── */}
-            <ul className="hidden lg:flex items-center h-[76px]">
+            <ul className="hidden lg:flex items-center h-19">
 
               <li>
                 <Link
                   href="/"
-                  className="flex items-center h-[76px] px-4 text-sm font-medium text-[#f0d080] border-b-2 border-slate-400"
+                  className="flex items-center h-19 px-4 text-sm font-medium text-[#f0d080] border-b-2 border-slate-400"
                 >
                   Accueil
                 </Link>
@@ -97,12 +96,12 @@ export default function Header() {
               {/* Dropdown Services */}
               <li
                 ref={dropdownRef}
-                className="relative h-[76px] flex items-center"
+                className="relative h-19 flex items-center"
                 onMouseEnter={() => setServicesOpen(true)}
                 onMouseLeave={() => setServicesOpen(false)}
               >
                 <button
-                  className="flex items-center gap-1.5 h-[76px] px-4 text-sm text-night-200 hover:text-[#f0d080] transition-colors"
+                  className="flex items-center gap-1.5 h-19 px-4 text-sm text-night-200 hover:text-[#f0d080] transition-colors"
                   aria-expanded={servicesOpen}
                   aria-haspopup="true"
                   onClick={() => setServicesOpen((o) => !o)}
@@ -123,7 +122,7 @@ export default function Header() {
                 {/* Panneau dropdown */}
                 <div
                   className={`
-                    absolute top-[76px] left-0 w-56 bg-night-700
+                    absolute top-19 left-0 w-56 bg-night-700
                     border border-[#c9a84c33] rounded-xl shadow-2xl py-1.5 z-50
                     transition-all duration-150 origin-top
                     ${servicesOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"}
@@ -175,7 +174,7 @@ export default function Header() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="flex items-center h-[76px] px-4 text-sm text-night-200 hover:text-[#f0d080] transition-colors"
+                    className="flex items-center h-19 px-4 text-sm text-night-200 hover:text-[#f0d080] transition-colors"
                   >
                     {link.label}
                   </Link>
