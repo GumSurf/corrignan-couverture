@@ -15,7 +15,7 @@ import { type FaqItem } from "../components/faq";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0 },
+  visible: { opacity: 1, y: 0 },
 };
 
 const fadeIn = {
@@ -138,11 +138,11 @@ const valeurs = [
 const equipe = [
   {
     nom: "Damien Corrignan",
-    role: "Couvreur indépendant",
+    role: "Artisan couvreur à Lanester",
     description:
-      "Artisan couvreur expérimenté, spécialisé en ardoise, zinc, bac acier et aluminium. Intervention dans tout le bassin lorientais : Lorient, Lanester, Ploemeur, Hennebont, Quéven, Locmiquélic.",
+      "Couvreur indépendant spécialisé en ardoise, zinc, bac acier, aluminium et bardage. J’interviens à Lanester, Lorient, Ploemeur, Hennebont et dans tout le Morbihan pour vos travaux de toiture.",
     image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop",
+      "/images/damien_corrignan.enc",
   },
 ];
 
@@ -217,7 +217,7 @@ export default function AProposPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
-            Notre histoire
+            Artisan couvreur à Lanester
           </motion.p>
 
           <motion.h1
@@ -226,7 +226,7 @@ export default function AProposPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
           >
-            Corrignan <span className="text-[#f0d080]">Couverture</span>
+            Damien <span className="text-[#f0d080]">Corrignan</span> — Couvreur à Lanester
           </motion.h1>
 
           <motion.p
@@ -235,8 +235,7 @@ export default function AProposPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.22 }}
           >
-            Artisan couvreur indépendant depuis septembre 2024, spécialisé dans la couverture du Morbihan.
-            Savoir-faire local, qualité et transparence, mes valeurs depuis le premier jour.
+            Artisan couvreur indépendant dans le Morbihan, j’interviens à Lanester, Lorient et dans tout le bassin lorientais pour vos travaux de toiture, zinguerie, bardage et rénovation.
           </motion.p>
         </div>
       </section>
@@ -259,16 +258,14 @@ export default function AProposPage() {
             <div className="grid gap-8 lg:grid-cols-2 items-center">
               <InViewSection className="space-y-6">
                 {[
-                  `Tout commence en 2004 quand Jean Corrignan, couvreur passionné originaire du Morbihan,
-                  décide de créer sa propre entreprise. Après 15 ans d'expérience dans différentes entreprises
-                  de couverture, il veut proposer une alternative différente : une entreprise à taille humaine,
-                  locale, qui privilégie la qualité et la relation client.`,
-                  `Installé à Lanester, au cœur du bassin lorientais, Corrignan Couverture grandit petit à petit
-                  et constitue une équipe d'artisans qualifiés. L'entreprise se spécialise dans tous types
-                  de couverture : ardoise naturelle, zinc, bac acier, aluminium et bardage. Chaque chantier
-                  est l'occasion de démontrer notre savoir-faire collectif et notre exigence de qualité.`,
-                  `Aujourd'hui, après plus de 300 chantiers réalisés, nous sommes fiers de notre réputation
-                  d'artisans sérieux et compétents. Le bouche-à-oreille reste notre meilleure publicité.`,
+                  `Je m'appelle Damien Corrignan, artisan couvreur basé à Lanester. 
+  Après avoir exercé en tant qu’indépendant, j’ai créé Corrignan Couverture avec une volonté simple : proposer un travail propre, durable et sans intermédiaire.`,
+
+                  `Chaque chantier est réalisé avec la même exigence, qu’il s’agisse d’une rénovation complète, d’une réparation ou d’un projet neuf. 
+  J’interviens directement, sans sous-traitance, pour garantir la qualité et le suivi du début à la fin.`,
+
+                  `Installé dans le bassin lorientais, je connais les contraintes du climat breton : humidité, vent, air marin. 
+  C’est cette expérience terrain qui me permet de proposer des solutions adaptées et durables pour votre toiture.`,
                 ].map((text, i) => (
                   <motion.p
                     key={i}
@@ -289,7 +286,7 @@ export default function AProposPage() {
                 >
                   <Image
                     className="rounded-2xl w-full h-80 object-cover border border-[#c9a84c22] shadow-xl"
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop"
+                    src="/images/chantiers/camion1.jpg"
                     alt="Chantier de couverture en cours, Corrignan Couverture"
                     width={800}
                     height={320}
@@ -364,11 +361,11 @@ export default function AProposPage() {
             </motion.p>
           </InViewSection>
 
-          <InViewSection className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <InViewSection className="flex justify-center">
             {equipe.map((personne, index) => (
               <motion.div
                 key={index}
-                className="bg-night-700 rounded-2xl p-6 border border-[#c9a84c33] text-center"
+                className="bg-night-700 rounded-2xl p-6 border border-[#c9a84c33] text-center w-full max-w-xs"
                 variants={scaleIn}
                 custom={index}
                 whileHover={{ scale: 1.02 }}
