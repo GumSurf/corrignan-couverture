@@ -21,7 +21,7 @@ export default function CtaImage() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className="gap-10 items-center mx-auto max-w-screen-xl md:grid md:grid-cols-2 lg:px-6"
+        className="gap-10 items-center mx-auto max-w-7xl md:grid md:grid-cols-2 lg:px-6"
       >
 
         {/* Image */}

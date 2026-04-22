@@ -71,7 +71,7 @@ export default function Header() {
                   priority
                 />
               </div>
-              <div className="md:hidden">
+              <div className="lg:hidden xl:block">
                 <span className="block text-[15px] font-semibold text-[#f0d080] leading-tight tracking-wide">
                   Corrignan Couverture
                 </span>

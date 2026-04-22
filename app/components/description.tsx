@@ -16,7 +16,7 @@ export default function Description() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className="mx-auto max-w-screen-xl lg:px-6"
+        className="mx-auto max-w-7xl lg:px-6"
       >
 
         <motion.div
@@ -50,7 +50,7 @@ export default function Description() {
 
           <motion.div variants={fadeUp}>
             <Link
-              href="/realisations"
+              href="/galerie"
               className="inline-flex items-center gap-2 font-medium text-[#f0d080] hover:text-white transition"
             >
               Voir nos réalisations

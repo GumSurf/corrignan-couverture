@@ -18,7 +18,7 @@ export default function ServiceBeforeAfter({ items }: Props) {
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="py-12 px-4 max-w-screen-xl mx-auto space-y-10">
+    <section className="py-12 px-4 max-w-7xl mx-auto space-y-10">
 
       {/* Header */}
       <motion.div

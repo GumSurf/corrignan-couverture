@@ -20,7 +20,7 @@ const item = {
 
 export default function Cta() {
   return (
-    <section className="relative bg-night-800 py-20 px-4 overflow-hidden">
+    <section className="relative bg-night-800 py-20 px-4">
 
       {/* glow décoratif */}
       <div className="absolute inset-0 pointer-events-none">

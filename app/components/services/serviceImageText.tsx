@@ -19,7 +19,7 @@ export default function ServiceImageText({ data }: Props) {
 
   return (
     <section className="py-12 px-4">
-      <div className="mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 gap-16 items-center">
+      <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-2 gap-16 items-center">
         
         <motion.div
           initial={{ opacity: 0, scale: 1.05 }}

@@ -27,7 +27,7 @@ export default function ZoneInterventionPage() {
     <main className="bg-night-800 min-h-screen">
       {/* Hero */}
       <section className="py-16 px-4 bg-night-900 border-b border-[#c9a84c22]">
-        <div className="mx-auto max-w-screen-xl text-center">
+        <div className="mx-auto max-w-7xl text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-white">
             Zone d&apos;<span className="text-[#f0d080]">intervention</span>
           </h1>
@@ -54,7 +54,7 @@ export default function ZoneInterventionPage() {
 
       {/* CTA */}
       <section className="py-16 px-4 bg-night-900">
-        <div className="mx-auto max-w-screen-xl text-center">
+        <div className="mx-auto max-w-7xl text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Votre ville n&apos;est pas listée ?</h2>
           <p className="text-[#b8b09a] mb-8">
             Contactez-nous pour discuter de votre projet, même en dehors de notre zone principale.

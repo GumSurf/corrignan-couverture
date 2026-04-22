@@ -210,7 +210,7 @@ export default function AProposPage() {
 
       {/* ── Hero ── */}
       <section className="py-16 px-4 bg-night-900 border-b border-[#c9a84c22]">
-        <div className="mx-auto max-w-screen-xl text-center">
+        <div className="mx-auto max-w-7xl text-center">
           <motion.p
             className="text-[#f0d080] text-xs font-medium tracking-widest uppercase mb-3"
             initial={{ opacity: 0, y: -12 }}
@@ -242,7 +242,7 @@ export default function AProposPage() {
 
       {/* ── Histoire ── */}
       <section className="py-16 px-4">
-        <div className="mx-auto max-w-screen-xl lg:px-6">
+        <div className="mx-auto max-w-7xl lg:px-6">
           <div className="max-w-screen-lg mx-auto text-[#b8b09a]">
 
             <InViewSection>
@@ -301,7 +301,7 @@ export default function AProposPage() {
 
       {/* ── Valeurs ── */}
       <section className="py-16 px-4 bg-night-700">
-        <div className="mx-auto max-w-screen-xl">
+        <div className="mx-auto max-w-7xl">
 
           <InViewSection className="text-center mb-12">
             <motion.h2
@@ -342,7 +342,7 @@ export default function AProposPage() {
 
       {/* ── Équipe ── */}
       <section className="py-16 px-4">
-        <div className="mx-auto max-w-screen-xl">
+        <div className="mx-auto max-w-7xl">
 
           <InViewSection className="text-center mb-12">
             <motion.h2
@@ -398,7 +398,7 @@ export default function AProposPage() {
 
       {/* ── Certifications ── */}
       <section className="py-16 px-4 bg-night-700">
-        <div className="mx-auto max-w-screen-xl">
+        <div className="mx-auto max-w-7xl">
 
           <InViewSection className="text-center mb-12">
             <motion.h2

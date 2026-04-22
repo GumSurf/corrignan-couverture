@@ -20,7 +20,7 @@ export default function PromoSection() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.2 }}
-        className="mx-auto grid max-w-screen-xl rounded-2xl bg-[#0f0f0f] border border-[#c9a84c22] p-6 md:p-10 lg:grid-cols-12 lg:gap-10"
+        className="mx-auto grid max-w-7xl rounded-2xl bg-[#0f0f0f] border border-[#c9a84c22] p-6 md:p-10 lg:grid-cols-12 lg:gap-10"
       >
 
         {/* Image */}
@@ -33,7 +33,7 @@ export default function PromoSection() {
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.3 }}
             className="mb-4 w-full max-w-sm rounded-xl object-cover h-64 md:h-80 md:max-w-full border border-[#c9a84c22] shadow-xl"
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop"
+            src="/images/chantiers/ardoise/ardoise3.jpg"
             alt="Maison avec toiture en ardoise refaite par Corrignan Couverture"
           />
         </motion.div>

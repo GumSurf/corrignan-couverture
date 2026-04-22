@@ -72,7 +72,7 @@ export default function ServicesPage() {
         variants={fadeUp}
         className="py-16 px-4 bg-night-900 border-b border-[#c9a84c22]"
       >
-        <div className="mx-auto max-w-screen-xl text-center">
+        <div className="mx-auto max-w-7xl text-center">
           <p className="text-xs tracking-widest uppercase text-[#c9a84c] mb-3">
             Nos métiers de couvreur
           </p>
@@ -94,7 +94,7 @@ export default function ServicesPage() {
         animate="show"
         className="py-16 px-4"
       >
-        <div className="mx-auto max-w-screen-xl grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto max-w-7xl grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 
           {services.map((service) => (
             <motion.div key={service.slug} variants={fadeUp}>

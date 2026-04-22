@@ -58,7 +58,7 @@ export default function Galerie({ images }: GalerieProps) {
 
   return (
     <section className="py-16 px-4">
-      <div className="mx-auto max-w-screen-xl">
+      <div className="mx-auto max-w-7xl">
 
         {/* GRID */}
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">

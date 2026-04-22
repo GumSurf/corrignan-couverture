@@ -12,7 +12,7 @@ export default function GalerieHero() {
   variants={container}
   className="py-16 px-4 bg-night-900 border-b border-[#c9a84c22]"
 >
-  <div className="mx-auto max-w-screen-xl text-center">
+  <div className="mx-auto max-w-7xl text-center">
     <motion.p variants={item} className="text-[#f0d080] text-xs font-medium tracking-widest uppercase mb-3">
       Galerie
     </motion.p>

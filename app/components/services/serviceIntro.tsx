@@ -20,7 +20,7 @@ export default function ServiceIntro({ service }: Props) {
   if (!service) return null;
 
   return (
-    <section className="py-12 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    <section className="py-12 px-4 mx-auto max-w-7xl lg:py-16 lg:px-6">
       <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-start">
 
         <motion.div

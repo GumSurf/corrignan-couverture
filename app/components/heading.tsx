@@ -25,7 +25,7 @@ export default function Heading() {
         whileInView="show"
         viewport={{ once: true, amount: 0.2 }}
         variants={container}
-        className="gap-16 items-center mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:px-6"
+        className="gap-16 items-center mx-auto max-w-7xl lg:grid lg:grid-cols-2 lg:px-6"
       >
 
         {/* Texte */}
@@ -39,9 +39,9 @@ export default function Heading() {
           </motion.h2>
 
           <motion.p variants={fadeUp} className="mb-4 leading-relaxed">
-            Corrignan Couverture, c'est une entreprise familiale basée à Lanester, au cœur du bassin
+            Corrignan Couverture, c&apos;est une entreprise familiale basée à Lanester, au cœur du bassin
             lorientais. On intervient sur tous types de toitures, ardoise naturelle, zinc, bac acier,
-            aluminium, avec le soin qu'on apporterait à sa propre maison. Assez proches pour être
+            aluminium, avec le soin qu&apos;on apporterait à sa propre maison. Assez proches pour être
             réactifs, assez expérimentés pour tout gérer de A à Z.
           </motion.p>
 

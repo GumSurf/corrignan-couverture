@@ -62,7 +62,7 @@ export const services: Record<ServiceKey, Service> = {
     beforeAfter: {
       before: "/images/chantiers/ardoise/ardoise_avant.jpeg",
       after: "/images/chantiers/ardoise/ardoise_apres.jpeg",
-      caption: "Rénovation complète d'une toiture en ardoise, Lorient",
+      caption: "A définir",
     },
     points: [
       "Durée de vie de 80 à 150 ans pour l'ardoise naturelle",
@@ -112,7 +112,7 @@ export const services: Record<ServiceKey, Service> = {
     beforeAfter: {
       before: "/images/chantiers/zinc/zinc_avant.jpeg",
       after: "/images/chantiers/zinc/zinc_apres.jpeg",
-      caption: "Réfection d'une toiture complexe en zinc, Locmiquélic",
+      caption: "A définir",
     },
     points: [
       "Durée de vie de 80 à 100 ans avec entretien minimal",
@@ -162,7 +162,7 @@ export const services: Record<ServiceKey, Service> = {
     beforeAfter: {
       before: "/images/chantiers/bacAcier/bac_acier_avant.jpeg",
       after: "/images/chantiers/bacAcier/bac_acier_apres.jpeg",
-      caption: "Couverture d'un bâtiment agricole en bac acier, Hennebont",
+      caption: "A définir",
     },
     points: [
       "Pose rapide, idéal pour grandes surfaces",
@@ -212,7 +212,7 @@ export const services: Record<ServiceKey, Service> = {
     beforeAfter: {
       before: "/images/chantiers/aluminium/aluminium_avant.jpg",
       after: "/images/chantiers/aluminium/aluminium_apres.jpg",
-      caption: "Toiture-terrasse en aluminium, Quiberon",
+      caption: "A définir",
     },
     points: [
       "Totalement inoxydable, y compris en bord de mer",

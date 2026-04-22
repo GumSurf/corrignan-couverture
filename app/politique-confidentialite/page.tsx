@@ -13,7 +13,7 @@ export default function PolitiqueConfidentialitePage() {
 
       {/* ── Header ── */}
       <section className="py-16 px-4 bg-night-900 border-b border-[#c9a84c22]">
-        <div className="mx-auto max-w-screen-xl text-center">
+        <div className="mx-auto max-w-7xl text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-white">
             Politique de <span className="text-[#f0d080]">confidentialité</span>
           </h1>
