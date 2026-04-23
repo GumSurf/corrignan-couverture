@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -29,13 +30,19 @@ export default function PromoSection() {
           transition={{ duration: 0.4 }}
           className="lg:col-span-5 flex items-center justify-center"
         >
-          <motion.img
+          <motion.div
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.3 }}
-            className="mb-4 w-full max-w-sm rounded-xl object-cover h-64 md:h-80 md:max-w-full border border-[#c9a84c22] shadow-xl"
-            src="/images/chantiers/ardoise/ardoise3.jpg"
-            alt="Maison avec toiture en ardoise refaite par Corrignan Couverture"
-          />
+            className="relative w-full max-w-sm md:max-w-full h-64 md:h-80 rounded-xl overflow-hidden border border-[#c9a84c22] shadow-xl mb-4"
+          >
+            <Image
+              src="/images/chantiers/ardoise/ardoise3.jpg"
+              alt="Maison avec toiture en ardoise refaite par Corrignan Couverture"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </motion.div>
         </motion.div>
 
         {/* Texte */}

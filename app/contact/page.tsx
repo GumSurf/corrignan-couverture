@@ -237,7 +237,7 @@ export default function ContactPage() {
           {/* Carte Google Maps */}
           <div className="bg-night-800 rounded-2xl p-4 border border-[#c9a84c33] overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2726.141564810399!2d-3.3366753!3d47.773575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48105f4fd1c5e4a3%3A0x52b06de23ba55e69!2sCorrignan%20couverture!5e0!3m2!1sfr!2sfr!4v1713010000000!5m2!1sfr!2sfr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42906.62395541233!2d-3.3672622208923544!3d47.76857134755125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48105c27c89d9345%3A0x40ca5cd36e2c400!2sLanester!5e0!3m2!1sfr!2sfr!4v1776939769907!5m2!1sfr!2sfr"
               width="100%"
               height="420"
               style={{ display: "block", border: 0 }}
@@ -246,25 +246,6 @@ export default function ContactPage() {
               referrerPolicy="no-referrer-when-downgrade"
               title="Corrignan Couverture - Lanester"
             />
-            <div className="mt-4 text-center">
-              <p className="text-night-200 text-sm">
-                📍 Notre adresse : 28 Rue de Kergreis, 56600 Lanester
-              </p>
-
-              <a
-                href="https://www.google.com/maps?q=Corrignan+Couverture+Lanester"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-2 text-[#f0d080] hover:text-white transition text-sm font-medium"
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
-                  <polyline points="15,3 21,3 21,9" />
-                  <line x1="10" y1="14" x2="21" y2="3" />
-                </svg>
-                Ouvrir dans Google Maps
-              </a>
-            </div>
           </div>
 
         </div>

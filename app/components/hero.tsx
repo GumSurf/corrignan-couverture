@@ -4,6 +4,7 @@ import Link from "next/link";
 import { fadeUp, item} from '../animation/variants';
 import { motion } from "framer-motion";
 import { useStagger } from '../animation/useStagger';
+import Image from "next/image";
 
 export default function Hero() {
 const stagger = useStagger(0.08);
@@ -103,9 +104,11 @@ const stagger = useStagger(0.08);
           transition={{ delay: 0.4, duration: 0.7 }}
           className="mt-14 max-w-5xl w-full"
         >
-          <img
+          <Image
             className="rounded-[40px] w-full h-72 object-cover border border-[#c9a84c22] shadow-2xl"
             src="/images/hero/hero.jpg"
+              width={1200}
+              height={288}
             alt="Chantier de couverture en ardoise, Corrignan Couverture Lanester"
           />
         </motion.div>

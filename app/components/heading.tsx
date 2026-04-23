@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 25 },
@@ -19,7 +20,7 @@ const container = {
 export default function Heading() {
   return (
     <section className="bg-night-800 py-16 px-4">
-      
+
       <motion.div
         initial="hidden"
         whileInView="show"
@@ -62,24 +63,37 @@ export default function Heading() {
           variants={container}
           className="grid grid-cols-2 gap-4 mt-10 lg:mt-0"
         >
-
-          <motion.img
+          <motion.div
             variants={fadeUp}
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.3 }}
-            className="w-full rounded-xl object-cover h-64 lg:h-auto border border-[#c9a84c22] shadow-lg"
-            src="/images/chantiers/ardoise/ardoise2.jpg"
-          />
+            className="relative w-full h-64 lg:h-80 rounded-xl overflow-hidden border border-[#c9a84c22] shadow-lg"
+          >
+            <Image
+              src="/images/chantiers/ardoise/ardoise2.jpg"
+              alt="Toiture ardoise Corrignan Couverture"
+              fill
+              sizes="(max-width: 1024px) 50vw, 25vw"
+              className="object-cover"
+            />
+          </motion.div>
 
-          <motion.img
+          <motion.div
             variants={fadeUp}
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.3 }}
-            className="mt-4 w-full lg:mt-10 rounded-xl object-cover h-64 lg:h-auto border border-[#c9a84c22] shadow-lg"
-            src="/images/chantiers/bacAcier/bac_acier2.jpg"
-          />
-
+            className="relative w-full h-64 lg:h-80 mt-4 lg:mt-10 rounded-xl overflow-hidden border border-[#c9a84c22] shadow-lg"
+          >
+            <Image
+              src="/images/chantiers/bacAcier/bac_acier2.jpg"
+              alt="Toiture bac acier Corrignan Couverture"
+              fill
+              sizes="(max-width: 1024px) 50vw, 25vw"
+              className="object-cover"
+            />
+          </motion.div>
         </motion.div>
+
 
       </motion.div>
     </section>

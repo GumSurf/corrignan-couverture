@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -24,15 +25,21 @@ export default function CtaImage() {
         className="gap-10 items-center mx-auto max-w-7xl md:grid md:grid-cols-2 lg:px-6"
       >
 
-        {/* Image */}
         <motion.div variants={imageVariant} transition={{ duration: 0.4 }}>
-          <motion.img
+          <motion.div
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.3 }}
-            className="w-full rounded-2xl object-cover h-72 md:h-full border border-[#c9a84c22] shadow-xl"
-            src="/images/chantiers/camion1.jpg"
-            alt="Couvreur en intervention sur un toit dans le bassin lorientais"
-          />
+            className="relative w-full h-72 md:h-96 rounded-2xl overflow-hidden border border-[#c9a84c22] shadow-xl"
+          >
+            <Image
+              src="/images/chantiers/camion1.jpg"
+              alt="Couvreur en intervention sur un toit dans le bassin lorientais"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+              priority
+            />
+          </motion.div>
         </motion.div>
 
         {/* Texte */}
@@ -54,7 +61,7 @@ export default function CtaImage() {
             className="mb-6 text-[#b8b09a] md:text-lg leading-relaxed"
           >
             Chez Corrignan Couverture, on travaille en direct, pas de sous-traitance, pas d'intermédiaire.
-            Du premier coup de téléphone jusqu'à la fin du chantier.
+            Du premier coup de téléphone jusqu&apos;à la fin du chantier.
           </motion.p>
 
           <motion.div variants={fadeUp}>
