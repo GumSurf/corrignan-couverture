@@ -173,7 +173,7 @@ const faqs: FaqItem[] = [
   {
     question: "Quelle est votre zone d'intervention ?",
     answer:
-      "J'interviens principalement dans le bassin lorientais : Lorient, Lanester, Hennebont, Ploemeur, Quéven, Locmiquélic, L'Armor Plage. Je me déplace également sur l'ensemble du Morbihan selon la nature du chantier.",
+      "J'interviens principalement dans le bassin lorientais : Lorient, Lanester, Hennebont, Ploemeur, Quéven, Locmiquélic, Larmor Plage. Je me déplace également sur l'ensemble du Morbihan selon la nature du chantier.",
   },
   {
     question: "Travaillez-vous avec des sous-traitants ?",

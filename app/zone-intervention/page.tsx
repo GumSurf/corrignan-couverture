@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Zone d'intervention - Damien Corrignan, couvreur à Lorient et alentours",
-  description: "Découvrez notre zone d'intervention : Lorient, Lanester, Ploemeur, Hennebont, Quéven, Locmiquélic, L'Armor Plage et tout le bassin lorientais. Couvreur indépendant Damien Corrignan.",
-  keywords: "zone intervention couvreur, Lorient, Lanester, Ploemeur, Locmiquélic, L'Armor Plage, Morbihan, Damien Corrignan",
+  description: "Découvrez notre zone d'intervention : Lorient, Lanester, Ploemeur, Hennebont, Quéven, Locmiquélic, Larmor Plage et tout le bassin lorientais. Couvreur indépendant Damien Corrignan.",
+  keywords: "zone intervention couvreur, Lorient, Lanester, Ploemeur, Locmiquélic, Larmor Plage, Morbihan, Damien Corrignan",
   openGraph: {
     title: "Zone d'intervention - Damien Corrignan",
     description: "Intervention dans le bassin lorientais et Morbihan.",
@@ -19,7 +19,7 @@ const villes = [
   { nom: "Hennebont", description: "Proche de Lanester, interventions rapides et de qualité." },
   { nom: "Quéven", description: "Couvertures zinc et aluminium pour bâtiments industriels." },
   { nom: "Locmiquélic", description: "Ville historique, pose d'ardoise sur monuments." },
-  { nom: "L'Armor Plage", description: "Extension de zone, devis sur demande." },
+  { nom: "Larmor Plage", description: "Extension de zone, devis sur demande." },
 ];
 
 export default function ZoneInterventionPage() {

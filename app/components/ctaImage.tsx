@@ -53,14 +53,14 @@ export default function CtaImage() {
             className="mb-4 text-4xl tracking-tight font-extrabold text-white leading-tight"
           >
             Une toiture qui tient dans le temps,{" "}
-            <span className="text-[#f0d080]">posée par des professionel.</span>
+            <span className="text-[#f0d080]">posée par des professionels.</span>
           </motion.h2>
 
           <motion.p
             variants={fadeUp}
             className="mb-6 text-[#b8b09a] md:text-lg leading-relaxed"
           >
-            Chez Corrignan Couverture, on travaille en direct, pas de sous-traitance, pas d'intermédiaire.
+            Chez Corrignan Couverture, on travaille en direct, pas de sous-traitance, pas d&apos;intermédiaire.
             Du premier coup de téléphone jusqu&apos;à la fin du chantier.
           </motion.p>
 

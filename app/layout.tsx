@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Damien Corrignan - Couvreur indépendant à Lanester | Corrignan Couverture",
-  description: "Damien Corrignan, couvreur depuis 1999. Ardoise, zinc, bac acier, aluminium à Lorient, Ploemeur, Locmiquélic, L'Armor Plage.",
-  keywords: "Damien Corrignan, couvreur Lanester, couvreur indépendant Morbihan, couvreur Lorient, Ploemeur, Locmiquélic, L'Armor Plage, bassin lorientais",
+  description: "Damien Corrignan, couvreur depuis 1999. Ardoise, zinc, bac acier, aluminium à Lorient, Ploemeur, Locmiquélic, Larmor Plage.",
+  keywords: "Damien Corrignan, couvreur Lanester, couvreur indépendant Morbihan, couvreur Lorient, Ploemeur, Locmiquélic, Larmor Plage, bassin lorientais",
   authors: [{ name: "Damien Corrignan" }],
   openGraph: {
     title: "Damien Corrignan - Couvreur indépendant à Lanester",
@@ -90,7 +90,7 @@ export default function RootLayout({
                 },
                 {
                   "@type": "City",
-                  "name": "L'Armor Plage"
+                  "name": "Larmor Plage"
                 },
                 {
                   "@type": "AdministrativeArea",
