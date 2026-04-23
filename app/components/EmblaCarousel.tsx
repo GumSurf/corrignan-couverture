@@ -39,7 +39,8 @@ const EmblaCarousel = (props: PropType) => {
               <div className="embla__slide__image">
                 <Image
                   src={slide}
-                  alt={`Image de chantier ${index + 1}`}
+                  alt=""
+                  aria-hidden="true"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover rounded-lg"
@@ -54,18 +55,6 @@ const EmblaCarousel = (props: PropType) => {
         <div className="embla__buttons">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-        </div>
-
-        <div className="embla__dots">
-          {scrollSnaps.map((_, index) => (
-            <DotButton
-              key={index}
-              onClick={() => onDotButtonClick(index)}
-              className={'embla__dot'.concat(
-                index === selectedIndex ? ' embla__dot--selected' : ''
-              )}
-            />
-          ))}
         </div>
       </div>
     </div>
