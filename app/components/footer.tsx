@@ -28,6 +28,7 @@ export default function Footer() {
                   src="/images/logo/logo.jpg"
                   alt="Corrignan Couverture"
                   fill
+                  sizes="120px"
                   className="object-cover"
                 />
               </div>

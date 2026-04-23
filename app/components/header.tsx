@@ -67,6 +67,7 @@ export default function Header() {
                   src="/images/logo/logo.jpg"
                   alt="Logo Corrignan Couverture"
                   fill
+                  sizes="120px"
                   className="object-cover"
                   priority
                 />

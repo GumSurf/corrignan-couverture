@@ -214,7 +214,7 @@ export default function AProposPage() {
             className="text-4xl md:text-5xl font-extrabold mb-4 text-white"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0 }}
           >
             Damien <span className="text-[#f0d080]">Corrignan</span>, Couvreur à Lanester
           </motion.h1>

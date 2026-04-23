@@ -102,14 +102,15 @@ const stagger = useStagger(0.08);
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4, duration: 0.7 }}
-          className="mt-14 max-w-5xl w-full"
+          className="mt-14 max-w-5xl w-full relative h-72 rounded-[40px] overflow-hidden border border-[#c9a84c22] shadow-2xl"
         >
           <Image
-            className="rounded-[40px] w-full h-72 object-cover border border-[#c9a84c22] shadow-2xl"
             src="/images/hero/hero.jpg"
-              width={1200}
-              height={288}
             alt="Chantier de couverture en ardoise, Corrignan Couverture Lanester"
+            fill
+            sizes="(max-width: 768px) 100vw, 1024px"
+            className="object-cover"
+            priority
           />
         </motion.div>
 
