@@ -3,7 +3,7 @@
 import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Swiper from 'swiper'
-import { Navigation, Pagination } from 'swiper/modules'
+import { Navigation } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -47,16 +47,11 @@ const testimonials = [
 export default function TestimonialsSwiper() {
   useEffect(() => {
     const swiper = new Swiper('.mySwiper', {
-      modules: [Navigation, Pagination],
+      modules: [Navigation],
       slidesPerView: 3,
       spaceBetween: 32,
       centeredSlides: true,
       loop: true,
-
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
 
       navigation: {
         nextEl: '.swiper-button-next',
