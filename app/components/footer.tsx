@@ -95,7 +95,7 @@ export default function Footer() {
                 <li><Link href="/mentions-legales" className="hover:text-[#f0d080] transition">Mentions légales</Link></li>
                 <li><Link href="/politique-confidentialite" className="hover:text-[#f0d080] transition">Confidentialité</Link></li>
 
-                <li className="pt-4 text-[#7a7a7a] text-xs leading-relaxed">
+                <li className="pt-4 text-[#a8a29e] text-xs leading-relaxed">
                   Lanester, Morbihan<br />
                   SIRET : 98939491100014
                 </li>
@@ -123,7 +123,7 @@ export default function Footer() {
               href="https://www.gabrielchriste.fr/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-[#7a7a7a] hover:text-[#f0d080] transition"
+              className="text-xs text-[#a8a29e] hover:text-[#f0d080] transition"
             >
               Site créé par Gabriel Christe
             </a>
