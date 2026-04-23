@@ -57,14 +57,11 @@ export default function HeroService({ service }: Props) {
           {service.tagline}
         </motion.p>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
+        <h1
           className="text-4xl md:text-5xl font-extrabold text-white"
         >
           {service.label}
-        </motion.h1>
+        </h1>
 
       </div>
     </section>

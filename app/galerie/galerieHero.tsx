@@ -17,9 +17,9 @@ export default function GalerieHero() {
       Galerie
     </motion.p>
 
-    <motion.h1 variants={item} className="text-4xl md:text-5xl font-extrabold mb-4 text-white">
+    <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-white">
       Galerie photo
-    </motion.h1>
+    </h1>
 
     <motion.p variants={item} className="text-[#b8b09a] max-w-2xl mx-auto">
       Une sélection d'images de nos réalisations en couverture et bardage dans le Morbihan.

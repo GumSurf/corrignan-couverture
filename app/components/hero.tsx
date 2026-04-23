@@ -33,15 +33,12 @@ const stagger = useStagger(0.08);
         </motion.div>
 
         {/* Titre */}
-        <motion.h1
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1, duration: 0.6 }}
+        <h1
           className="text-center text-white font-bold text-3xl sm:text-4xl md:text-5xl max-w-2xl leading-tight"
         >
           Votre toiture entre les mains de{" "}
           <span className="text-[#f0d080]">Damien Corrignan</span>, couvreur du Morbihan
-        </motion.h1>
+        </h1>
 
         {/* Sous-titre */}
         <motion.p
