@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export default function ServiceCTA({ article }: { article: string }) {
+export default function ServiceCTA({ cta }: { cta: string }) {
   return (
     <section className="py-12 px-4 text-center">
 
@@ -12,7 +12,7 @@ export default function ServiceCTA({ article }: { article: string }) {
         whileInView={{ opacity: 1, y: 0 }}
       >
         <h2 className="text-3xl text-white mb-4">
-          Un projet en {article} ?
+          Un projet en {cta} ?
         </h2>
 
         <p className="text-[#b8b09a] mb-6">

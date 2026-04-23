@@ -12,7 +12,7 @@ import 'swiper/css/pagination'
 const testimonials = [
   {
     name: "Erwann Margana",
-    text: "Très professionnel, fiable, ça faisait littéralement 1 an que je me battais avec des couvreurs pour réparer ma toiture, de tous ceux que j'ai vu, j'ai vite compris que Damien c'était pas le même niveau que tous les autres, je recommande Corda Couverture à tous ceux qui cherchent un couvreur pour leur toiture",
+    text: "Très professionnel, fiable, ça faisait littéralement 1 an que je me battais avec des couvreurs pour réparer ma toiture, de tous ceux que j'ai vu, j'ai vite compris que Damien c'était pas le même niveau que tous les autres, je recommande Corrignan Couverture à tous ceux qui cherchent un couvreur pour leur toiture",
   },
   {
     name: "Jean-Michel Doreau",

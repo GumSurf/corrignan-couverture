@@ -46,7 +46,7 @@ export default function MentionsLegalesPage() {
                 56600 Lanester<br />
                 France</p>
                 <p><strong>Téléphone :</strong> 06 04 10 70 18</p>
-                <p><strong>Email :</strong> Corda.5600@gmail.com</p>
+                <p><strong>Email :</strong> corrignan.couv56@gmail.com</p>
                 <p><strong>Directeur de la publication :</strong> Jean Corrignan</p>
               </div>
             </div>

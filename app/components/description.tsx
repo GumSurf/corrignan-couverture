@@ -38,7 +38,7 @@ export default function Description() {
           />
 
           <motion.p variants={fadeUp} className="mb-4 leading-relaxed">
-            Depuis septembre 2024, Damien Corrignan, couvreur indépendant, pose de l'ardoise à Lorient, refait des toits en zinc à Locmiquélic, installe des bacs acier à Ploemeur...
+            Depuis 1999, Damien Corrignan, couvreur indépendant, pose de l'ardoise à Lorient, refait des toits en zinc à Locmiquélic, installe des bacs acier à Ploemeur...
           </motion.p>
 
           <motion.p

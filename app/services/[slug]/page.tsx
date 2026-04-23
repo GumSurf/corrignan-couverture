@@ -62,7 +62,7 @@ export default async function Page({
 
       <FAQ faqs={service.faqs} />
 
-      <ServiceCTA article={service.article} />
+      <ServiceCTA cta={service.cta} />
     </main>
   );
 }

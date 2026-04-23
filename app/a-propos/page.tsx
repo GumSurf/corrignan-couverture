@@ -63,7 +63,7 @@ const valeurs = [
   {
     title: "Savoir-faire local",
     description:
-      "Depuis septembre 2024 dans le Morbihan, je connais le climat breton et les spécificités de chaque région autour de Lorient.",
+      "Depuis 1999 dans le Morbihan, je connais le climat breton et les spécificités de chaque région autour de Lorient.",
     icon: (
       <svg
         width="24"
@@ -148,19 +148,9 @@ const equipe = [
 
 const certifications = [
   {
-    title: "Qualification RGE",
-    description:
-      "Reconnu Garant de l'Environnement pour les travaux d'isolation et de rénovation énergétique.",
-  },
-  {
     title: "Assurance Décennale",
     description:
       "Couverture complète pour tous vos travaux de couverture, garantie légale obligatoire.",
-  },
-  {
-    title: "FFB - Fédération Française du Bâtiment",
-    description:
-      "Membre de la Fédération Française du Bâtiment, garantissant le respect des normes et standards.",
   },
   {
     title: "Formation continue",
@@ -173,7 +163,7 @@ const faqs: FaqItem[] = [
   {
     question: "Depuis quand existe Corrignan Couverture ?",
     answer:
-      "Damien Corrignan a lancé son activité de couvreur indépendant le 3 septembre 2024. Basé à Lanester, il intervient dans tout le bassin lorientais et le Morbihan.",
+      "Damien Corrignan a lancé son activité de couvreur indépendant le 3 septembre 2024. Toutefois, il exerce en tant que couvreur depuis 1999. Basé à Lanester, il intervient dans tout le bassin lorientais et le Morbihan.",
   },
   {
     question: "Êtes-vous une entreprise familiale ?",
@@ -316,7 +306,7 @@ export default function AProposPage() {
               variants={fadeUp}
               custom={1}
             >
-              Ce qui guide notre travail au quotidien depuis 20 ans
+              Ce qui guide notre travail au quotidien depuis 27 ans dans le Morbihan
             </motion.p>
           </InViewSection>
 

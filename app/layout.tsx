@@ -17,12 +17,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Damien Corrignan - Couvreur indépendant à Lanester | Corrignan Couverture",
-  description: "Damien Corrignan, couvreur indépendant depuis septembre 2024. Ardoise, zinc, bac acier, aluminium à Lorient, Ploemeur, Locmiquélic, L'Armor Plage.",
+  description: "Damien Corrignan, couvreur depuis 1999. Ardoise, zinc, bac acier, aluminium à Lorient, Ploemeur, Locmiquélic, L'Armor Plage.",
   keywords: "Damien Corrignan, couvreur Lanester, couvreur indépendant Morbihan, couvreur Lorient, Ploemeur, Locmiquélic, L'Armor Plage, bassin lorientais",
   authors: [{ name: "Damien Corrignan" }],
   openGraph: {
     title: "Damien Corrignan - Couvreur indépendant à Lanester",
-    description: "Couvreur indépendant depuis septembre 2024. Intervention dans le bassin lorientais et Morbihan.",
+    description: "Couvreur depuis 1999. Intervention dans le bassin lorientais et Morbihan.",
     type: "website",
     locale: "fr_FR",
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   robots: "index, follow",
   alternates: {
-    canonical: "https://corrignan-couverture.fr", // Remplacez par votre domaine réel
+    canonical: "https://corrignan-couverture.fr", // Remplacez par nom de domaine réel
   },
 };
 
@@ -56,9 +56,9 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               "name": "Corrignan Couverture",
               "description": "Damien Corrignan, couvreur indépendant spécialisé en ardoise, zinc, bac acier et aluminium dans le bassin lorientais.",
-              "url": "https://corrignan-couverture.fr", // Remplacez par votre domaine
+              "url": "https://corrignan-couverture.fr", // Remplacez par nom de domaine réel
               "telephone": "+33604107018",
-              "email": "Corda.5600@gmail.com",
+              "email": "corrignan.couv56@gmail.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "5 Chem. du Zulio",

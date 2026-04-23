@@ -26,17 +26,6 @@ const horaires = [
 
 const coordonnees = [
   {
-    titre: "Adresse",
-    valeur: "5 Chem. du Zulio\n56600 Lanester",
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#f0d080]">
-        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-        <circle cx="12" cy="10" r="3" />
-      </svg>
-    ),
-    lien: "https://maps.google.com/?q=5+Chem.+du+Zulio+Lanester",
-  },
-  {
     titre: "Téléphone",
     valeur: "06 04 10 70 18",
     icon: (
@@ -48,14 +37,14 @@ const coordonnees = [
   },
   {
     titre: "Email",
-    valeur: "Corda.5600@gmail.com",
+    valeur: "corrignan.couv56@gmail.com",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#f0d080]">
         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
         <polyline points="22,6 12,13 2,6" />
       </svg>
     ),
-    lien: "mailto:Corda.5600@gmail.com",
+    lien: "mailto:corrignan.couv56@gmail.com",
   },
   {
     titre: "Zone d'intervention",
@@ -65,6 +54,19 @@ const coordonnees = [
         <path d="M3 7V5a2 2 0 012-2h2l2-2h4l2 2h2a2 2 0 012 2v2l-2 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V9L3 7z" />
         <path d="M9 11v6" />
         <path d="M15 11v6" />
+      </svg>
+    ),
+    lien: null,
+  },
+  {
+    titre: "Informations légales",
+    valeur: "SIRET : 989 394 911 00014\nAssurance décennale",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[#f0d080]">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+        <polyline points="14,2 14,8 20,8" />
+        <line x1="16" y1="13" x2="8" y2="13" />
+        <line x1="16" y1="17" x2="8" y2="17" />
       </svg>
     ),
     lien: null,
@@ -210,9 +212,6 @@ export default function ContactPage() {
                     </div>
                   ))}
                 </div>
-                <p className="text-[#666] text-sm mt-4">
-                  Interventions d'urgence : 24h/24, 7j/7
-                </p>
               </div>
 
             </div>

@@ -1,4 +1,5 @@
 import { type FaqItem } from "../components/faq";
+import Cta from '../components/cta';
 
 /* ────────────────────────────────
    TYPES
@@ -22,6 +23,7 @@ export type Service = {
   article: string;
   tagline: string;
   description: string;
+  cta: string;
 
   description2: ServiceDescription2;
 
@@ -50,6 +52,7 @@ export const services: Record<ServiceKey, Service> = {
     ardoise: {
     label: "Ardoise",
     article: "l'ardoise",
+    cta: "ardoise",
     tagline: "La couverture traditionnelle du Morbihan",
     description:
       "L'ardoise est le matériau de couverture le plus répandu en Bretagne, et pour cause : elle résiste parfaitement aux vents marins, aux pluies bretonnes et au gel. Chez Corrignan Couverture, on pose aussi bien de l'ardoise naturelle d'Espagne ou d'Angers que de l'ardoise artificielle (fibrociment), selon votre budget et le style de votre maison.",
@@ -80,7 +83,7 @@ export const services: Record<ServiceKey, Service> = {
       },
       {
         question: "Quelle est la différence entre ardoise naturelle et ardoise artificielle ?",
-        answer: "L'ardoise naturelle est extraite en carrière, principalement en Espagne et en Anjou. Elle est plus lourde, plus chère, mais elle dure bien plus longtemps et a une esthétique incomparable. L'ardoise artificielle (fibrociment) est plus légère et moins coûteuse, ce qui en fait un bon choix pour les rénovations où la charpente ne peut pas supporter beaucoup de poids.",
+        answer: "L’ardoise naturelle, principalement issue de carrières espagnoles, est très appréciée en Bretagne pour sa solidité et son charme authentique. Plus lourde et plus coûteuse, elle offre en contrepartie une durée de vie exceptionnelle et un rendu esthétique intemporel, parfaitement adapté aux toitures bretonnes. L’ardoise artificielle (fibrociment), plus légère et plus économique, constitue une alternative intéressante, notamment en rénovation lorsque la charpente ne permet pas de supporter une charge trop importante.",
       },
       {
         question: "Peut-on poser de l'ardoise sur une toiture existante ?",
@@ -100,6 +103,7 @@ export const services: Record<ServiceKey, Service> = {
   zinc: {
     label: "Zinc",
     article: "le zinc",
+    cta: "zinc",
     tagline: "Noblesse et longévité pour toitures complexes",
     description:
       "Le zinc est un matériau noble qui séduit autant pour ses qualités techniques que pour son esthétique. Idéal sur les toitures à faible pente, les noues, les lucarnes, les gouttières et les façades, il vieillit avec élégance et développe une patine naturelle au fil des années. Sa résistance à la corrosion en fait un excellent choix en zone côtière.",
@@ -126,7 +130,7 @@ export const services: Record<ServiceKey, Service> = {
     faqs: [
       {
         question: "Le zinc résiste-t-il au sel marin en Bretagne ?",
-        answer: "Oui, c'est l'un de ses grands atouts. Le zinc est naturellement insensible à la corrosion, même en bord de mer. Il forme une couche protectrice naturelle (la patine) qui le protège des agressions extérieures. C'est pourquoi on le recommande particulièrement sur le littoral morbihannais.",
+        answer: "Le zinc peut être utilisé en Bretagne, mais il est moins adapté en bord de mer. L’air salin accélère son vieillissement et peut altérer sa protection naturelle (la patine). Pour les zones très exposées, notamment sur le littoral, on privilégie généralement l’aluminium, qui offre une meilleure résistance à la corrosion. Le choix du matériau dépend donc de l’emplacement du chantier et de son exposition.",
       },
       {
         question: "Quelle est la différence entre zinc naturel et zinc prépatiné ?",
@@ -138,7 +142,7 @@ export const services: Record<ServiceKey, Service> = {
       },
       {
         question: "Quelle est la durée de vie d'une toiture en zinc ?",
-        answer: "Une toiture en zinc bien posée dure entre 80 et 100 ans. L'entretien est minimal : un contrôle visuel tous les 10 ans suffit généralement. C'est un investissement sur le très long terme.",
+        answer: "Une toiture en zinc bien posée dure entre 80 et 100 ans, dépend de l'épaisseur. L'entretien est minimal : un contrôle visuel tous les 10 ans suffit généralement. C'est un investissement sur le très long terme.",
       },
       {
         question: "Le zinc convient-il aux toitures à faible pente ?",
@@ -150,6 +154,7 @@ export const services: Record<ServiceKey, Service> = {
   "bac-acier": {
     label: "Bac acier",
     article: "le bac acier",
+    cta: "bac acier",
     tagline: "Rapidité, solidité et économie",
     description:
       "Le bac acier est la solution idéale pour les grandes surfaces, les bâtiments agricoles, les hangars et les extensions. Léger, facile et rapide à poser, il est disponible dans une large gamme de couleurs et de profils. C'est aussi un excellent choix pour les toitures à faible pente où l'ardoise ou le zinc seraient inadaptés.",
@@ -192,7 +197,7 @@ export const services: Record<ServiceKey, Service> = {
       },
       {
         question: "Le bac acier est-il bruyant sous la pluie ?",
-        answer: "C'est une idée reçue. Sur un bâtiment habité, le bac acier est posé avec une isolation qui absorbe les bruits de pluie. Le résultat est similaire à n'importe quel autre matériau de couverture. Sur un bâtiment non isolé (hangar, remise), il y a effectivement plus de bruit, mais c'est le cas de tous les matériaux métalliques.",
+        answer: "Non, contrairement aux idées reçues. Sur une habitation, le bac acier est toujours posé avec une isolation adaptée. On utilise notamment des panneaux sandwichs intégrant une couche de mousse polyuréthane, qui assure à la fois une isolation thermique et une excellente absorption du bruit. Résultat : le confort est comparable à une toiture traditionnelle. En revanche, sur un bâtiment non isolé (hangar, abri), le bruit de la pluie est effectivement plus présent.",
       },
     ] as FaqItem[],
   },
@@ -200,6 +205,7 @@ export const services: Record<ServiceKey, Service> = {
   aluminium: {
     label: "Aluminium",
     article: "l'aluminium",
+    cta: "aluminium",
     tagline: "Légèreté, longévité et zéro entretien",
     description:
       "L'aluminium est un matériau haut de gamme, particulièrement apprécié pour les toitures plates, les terrasses, les toits-terrasses et les bardages en zone côtière. Inoxydable, léger et totalement recyclable, il ne demande aucun entretien sur toute sa durée de vie. Un investissement rentable sur le long terme.",
@@ -250,6 +256,7 @@ export const services: Record<ServiceKey, Service> = {
   bardage: {
     label: "Bardage",
     article: "le bardage",
+    cta: "bardage",
     tagline: "Protéger et habiller vos façades",
     description:
       "Le bardage est une solution double fonction : il améliore l'isolation thermique de votre bâtiment par l'extérieur tout en lui donnant un aspect neuf et moderne. Corrignan Couverture pose du bardage en zinc, aluminium ou bac acier, selon vos préférences et la nature de votre projet. Rénovation ou construction neuve, on s'adapte.",

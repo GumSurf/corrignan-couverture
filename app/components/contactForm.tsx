@@ -68,7 +68,13 @@ export default function ContactForm() {
   if (submitted) {
     return (
       <div className="bg-night-700 rounded-2xl p-8 border border-[#c9a84c33] text-center">
-        <div className="text-6xl mb-4">✅</div>
+        <div className="flex justify-center mb-5">
+          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#b8882a] to-[#e0b84a] flex items-center justify-center">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#120d00" strokeWidth="2.5">
+              <polyline points="20,6 9,17 4,12" />
+            </svg>
+          </div>
+        </div>
         <h3 className="text-2xl font-bold text-white mb-2">Message envoyé !</h3>
         <p className="text-[#b8b09a]">
           Merci pour votre message. Nous vous répondrons dans les plus brefs délais.

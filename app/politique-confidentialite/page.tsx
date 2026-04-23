@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Politique de confidentialité, Damien Corrignan, Corrignan Couverture",
   description: "Politique de confidentialité de Damien Corrignan, couvreur indépendant. Découvrez comment je protège vos données personnelles et respecte le RGPD.",
   keywords: "politique de confidentialité, RGPD, protection des données, Damien Corrignan, Corrignan Couverture",
-  robots: "noindex, nofollow", // Les pages légales n'ont pas besoin d'être indexées
+  robots: "noindex, nofollow",
 };
 
 export default function PolitiqueConfidentialitePage() {
@@ -53,8 +53,8 @@ export default function PolitiqueConfidentialitePage() {
               <div className="text-[#b8b09a] space-y-3">
                 <p><strong>Entreprise :</strong> Corrignan Couverture SAS</p>
                 <p><strong>Adresse :</strong> 123 Rue de la Couverture, 56600 Lanester, France</p>
-                <p><strong>SIRET :</strong> XXX XXX XXX XXXXX</p>
-                <p><strong>Email :</strong> Corda.5600@gmail.com</p>
+                <p><strong>SIRET :</strong> 989 394 911 00014</p>
+                <p><strong>Email :</strong> corrignan.couv56@gmail.com</p>
                 <p><strong>Téléphone :</strong> 06 04 10 70 18</p>
                 <p><strong>Représentant légal :</strong> Jean Corrignan, Directeur Général</p>
               </div>
@@ -66,7 +66,7 @@ export default function PolitiqueConfidentialitePage() {
               <div className="text-[#b8b09a] space-y-4">
                 <p>
                   Nous collectons uniquement les données nécessaires à la fourniture de nos services
-                  et à l'amélioration de votre expérience utilisateur.
+                  et à l&apos;amélioration de votre expérience utilisateur.
                 </p>
 
                 <h3 className="text-xl font-semibold text-white mt-6 mb-4">Données collectées via le formulaire de contact :</h3>
@@ -82,14 +82,14 @@ export default function PolitiqueConfidentialitePage() {
                 <ul className="list-disc list-inside space-y-2 ml-4">
                   <li>Adresse IP (anonymisée)</li>
                   <li>Type de navigateur et version</li>
-                  <li>Système d'exploitation</li>
+                  <li>Système d&apos;exploitation</li>
                   <li>Pages visitées et durée de visite</li>
                   <li>Source de trafic (référent)</li>
                 </ul>
 
                 <p className="mt-4">
-                  <strong>Base légale du traitement :</strong> Consentement de l'utilisateur pour
-                  les formulaires de contact, intérêt légitime pour l'amélioration du site.
+                  <strong>Base légale du traitement :</strong> Consentement de l&apos;utilisateur pour
+                  les formulaires de contact, intérêt légitime pour l&apos;amélioration du site.
                 </p>
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function PolitiqueConfidentialitePage() {
               <div className="text-[#b8b09a] space-y-4">
                 <p>Nous utilisons vos données personnelles pour :</p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Répondre à vos demandes de devis ou d'informations</li>
+                  <li>Répondre à vos demandes de devis ou d&apos;informations</li>
                   <li>Vous contacter pour discuter de vos besoins en couverture</li>
                   <li>Améliorer notre site web et nos services</li>
                   <li>Respecter nos obligations légales et contractuelles</li>
@@ -117,7 +117,7 @@ export default function PolitiqueConfidentialitePage() {
               <h2 className="text-2xl font-bold text-white mb-6">Partage des données personnelles</h2>
               <div className="text-[#b8b09a] space-y-4">
                 <p>
-                  Corrignan Couverture s'engage à ne pas vendre, louer ou partager vos données
+                  Corrignan Couverture s&apos;engage à ne pas vendre, louer ou partager vos données
                   personnelles avec des tiers, sauf dans les cas suivants :
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
@@ -173,7 +173,7 @@ export default function PolitiqueConfidentialitePage() {
               <h2 className="text-2xl font-bold text-white mb-6">Cookies et traceurs</h2>
               <div className="text-[#b8b09a] space-y-4">
                 <p>
-                  Notre site web n'utilise pas de cookies de tracking publicitaires ou de cookies
+                  Notre site web n&apos;utilise pas de cookies de tracking publicitaires ou de cookies
                   tiers pour analyser votre comportement.
                 </p>
                 <p>
@@ -196,16 +196,16 @@ export default function PolitiqueConfidentialitePage() {
               <div className="text-[#b8b09a] space-y-4">
                 <p>Conformément au RGPD, vous disposez des droits suivants :</p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li><strong>Droit d'accès :</strong> Connaître les données que nous détenons sur vous</li>
+                  <li><strong>Droit d&apos;accès :</strong> Connaître les données que nous détenons sur vous</li>
                   <li><strong>Droit de rectification :</strong> Corriger des données inexactes</li>
-                  <li><strong>Droit à l'effacement :</strong> Supprimer vos données (dans certaines conditions)</li>
+                  <li><strong>Droit à l&apos;effacement :</strong> Supprimer vos données (dans certaines conditions)</li>
                   <li><strong>Droit à la limitation :</strong> Limiter le traitement de vos données</li>
                   <li><strong>Droit à la portabilité :</strong> Récupérer vos données dans un format structuré</li>
-                  <li><strong>Droit d'opposition :</strong> Refuser certains traitements</li>
+                  <li><strong>Droit d&apos;opposition :</strong> Refuser certains traitements</li>
                 </ul>
                 <p>
                   Pour exercer ces droits, contactez-nous à : contact@corrignan-couverture.fr
-                  ou par courrier à l'adresse de notre siège social.
+                  ou par courrier à l&apos;adresse de notre siège social.
                 </p>
                 <p>
                   Vous avez également le droit de déposer une réclamation auprès de la CNIL.
@@ -246,11 +246,11 @@ export default function PolitiqueConfidentialitePage() {
               <h2 className="text-2xl font-bold text-white mb-6">Contact</h2>
               <div className="text-[#b8b09a] space-y-4">
                 <p>
-                  Pour toute question concernant cette politique de confidentialité ou l'exercice
+                  Pour toute question concernant cette politique de confidentialité ou l&apos;exercice
                   de vos droits, contactez notre Délégué à la Protection des Données :
                 </p>
                 <div className="bg-night-600 rounded-lg p-4 mt-4">
-                  <p><strong>Email :</strong> Corda.5600@gmail.com</p>
+                  <p><strong>Email :</strong> corrignan.couv56@gmail.com</p>
                   <p><strong>Adresse postale :</strong><br />
                   À l'attention du DPO<br />
                   Corrignan Couverture<br />

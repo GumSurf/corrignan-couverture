@@ -28,7 +28,7 @@ const stagger = useStagger(0.08);
           transition={{ duration: 0.5 }}
           className="mt-10 mb-6 flex items-center space-x-2 border border-[#c9a84c44] text-[#f0d080] text-xs rounded-full px-4 pr-2 py-1.5 bg-[#0f0f0f]"
         >
-          <span>Couvreur indépendant · Morbihan depuis septembre 2024</span>
+          <span>Couvreur · Morbihan depuis 1999</span>
         </motion.div>
 
         {/* Titre */}
