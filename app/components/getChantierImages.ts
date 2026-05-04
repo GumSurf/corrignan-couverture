@@ -7,10 +7,10 @@ export function getChantierImages(): string[] {
   if (!fs.existsSync(base)) return [];
 
   const all = fs.readdirSync(base, { recursive: true }) as string[];
-  console.log('📸 fichiers trouvés:', all);
 
   const exts = ['.jpg', '.jpeg', '.png', '.webp', '.avif'];
   return all
     .filter(f => exts.includes(path.extname(f).toLowerCase()))
+    .filter(f => !/_hero\.(jpg|jpeg|png)$/i.test(f))
     .map(f => `/images/chantiers/${f.replace(/\\/g, '/')}`);
 }
