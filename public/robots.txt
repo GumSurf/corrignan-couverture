@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://corrignan.fr
+
+# Sitemaps
+Sitemap: https://corrignan.fr/sitemap.xml
