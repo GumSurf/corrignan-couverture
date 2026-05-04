@@ -259,7 +259,7 @@ export const services: Record<ServiceKey, Service> = {
     cta: "bardage",
     tagline: "Habiller et protéger vos façades avec style",
     description:
-      "Le bardage acier est une solution robuste et esthétique pour rénover ou construire vos façades. Corrignan Couverture pose du bardage en bac acier laqué, disponible dans une large palette de couleurs et de profils. Résistant aux intempéries bretonnes, facile à entretenir, il donne un aspect net et contemporain à tous types de bâtiments — maisons individuelles, extensions, locaux professionnels ou agricoles.",
+      "Le bardage acier est une solution robuste et esthétique pour rénover ou construire vos façades. Corrignan Couverture pose du bardage en bac acier laqué, disponible dans une large palette de couleurs et de profils. Résistant aux intempéries bretonnes, facile à entretenir, il donne un aspect net et contemporain à tous types de bâtiments, maisons individuelles, extensions, locaux professionnels ou agricoles.",
     description2: {
       title: "Bardage bac acier et isolation par l'extérieur : un double bénéfice",
       body: "Poser un bardage, c'est souvent l'occasion de réaliser une isolation thermique par l'extérieur (ITE) en même temps, et c'est là que l'investissement devient vraiment rentable. On fixe d'abord un isolant sur la façade existante, puis on pose le bardage bac acier par-dessus sur une ossature métallique. Résultat : votre bâtiment est mieux isolé, la façade est protégée des pluies et du vent, et votre consommation d'énergie baisse. Une solution particulièrement pertinente en Bretagne où l'humidité et le sel marin sollicitent fortement les façades.",
@@ -279,7 +279,7 @@ export const services: Record<ServiceKey, Service> = {
       {
         question: "Faut-il un permis de construire pour poser du bardage ?",
         answer:
-          "Dans la plupart des cas, une déclaration préalable de travaux suffit. Si votre bâtiment se trouve dans une zone protégée — secteur ABF, zone littorale ou commune soumise à des règles spécifiques — un permis de construire peut être nécessaire. On vous aide à clarifier les démarches lors de la visite.",
+          "Dans la plupart des cas, une déclaration préalable de travaux suffit. Si votre bâtiment se trouve dans une zone protégée secteur ABF, zone littorale ou commune soumise à des règles spécifiques, un permis de construire peut être nécessaire. On vous aide à clarifier les démarches lors de la visite.",
       },
       {
         question: "Le bardage bac acier améliore-t-il l'isolation ?",
