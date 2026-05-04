@@ -257,44 +257,49 @@ export const services: Record<ServiceKey, Service> = {
     label: "Bardage",
     article: "le bardage",
     cta: "bardage",
-    tagline: "Protéger et habiller vos façades",
+    tagline: "Habiller et protéger vos façades avec style",
     description:
-      "Le bardage est une solution double fonction : il améliore l'isolation thermique de votre bâtiment par l'extérieur tout en lui donnant un aspect neuf et moderne. Corrignan Couverture pose du bardage en zinc, aluminium ou bac acier, selon vos préférences et la nature de votre projet. Rénovation ou construction neuve, on s'adapte.",
+      "Le bardage acier est une solution robuste et esthétique pour rénover ou construire vos façades. Corrignan Couverture pose du bardage en bac acier laqué, disponible dans une large palette de couleurs et de profils. Résistant aux intempéries bretonnes, facile à entretenir, il donne un aspect net et contemporain à tous types de bâtiments — maisons individuelles, extensions, locaux professionnels ou agricoles.",
     description2: {
-      title: "Bardage et isolation par l'extérieur : un double bénéfice",
-      body: "Poser un bardage, c'est souvent l'occasion de réaliser une isolation thermique par l'extérieur (ITE) en même temps, et c'est là que l'investissement devient vraiment intéressant. On pose d'abord un isolant sur la façade existante, puis on fixe le bardage par-dessus. Résultat : votre maison est mieux isolée, votre façade est protégée des intempéries et votre consommation d'énergie baisse. Une solution particulièrement pertinente en Bretagne où l'humidité et le vent sollicitent fortement les façades.",
+      title: "Bardage bac acier et isolation par l'extérieur : un double bénéfice",
+      body: "Poser un bardage, c'est souvent l'occasion de réaliser une isolation thermique par l'extérieur (ITE) en même temps, et c'est là que l'investissement devient vraiment rentable. On fixe d'abord un isolant sur la façade existante, puis on pose le bardage bac acier par-dessus sur une ossature métallique. Résultat : votre bâtiment est mieux isolé, la façade est protégée des pluies et du vent, et votre consommation d'énergie baisse. Une solution particulièrement pertinente en Bretagne où l'humidité et le sel marin sollicitent fortement les façades.",
       image: "/images/chantiers/bardage/bardage1.jpg",
-      imageAlt: "Pose de bardage métallique sur façade bretonne",
+      imageAlt: "Pose de bardage bac acier sur façade en Morbihan",
     },
     points: [
-      "Améliore l'isolation thermique et acoustique",
-      "Protège la façade des intempéries bretonnes",
-      "Disponible en zinc, aluminium ou bac acier",
-      "Large choix de finitions et de couleurs",
-      "Compatible avec toutes constructions : maisons, bâtiments, extensions",
+      "Bac acier laqué disponible en de nombreuses couleurs et profils",
+      "Excellente résistance aux intempéries et à l'humidité bretonne",
+      "Compatible avec l'isolation thermique par l'extérieur (ITE)",
+      "Matériau léger, solide et facile d'entretien",
+      "Adapté à tous types de bâtiments : maisons, extensions, locaux pro ou agricoles",
     ],
     image: "/images/chantiers/bardage/bardage_hero.jpg",
-    imageAlt: "Bardage extérieur posé par Corrignan Couverture",
+    imageAlt: "Bardage bac acier posé par Corrignan Couverture à Lanester",
     faqs: [
       {
         question: "Faut-il un permis de construire pour poser du bardage ?",
-        answer: "Ça dépend. Une simple déclaration préalable de travaux suffit dans la plupart des cas. Si votre maison est dans une zone protégée (ABF, zone littorale) ou si les travaux modifient l'aspect extérieur de manière significative, un permis de construire peut être nécessaire. On vous aide à identifier les démarches lors de la visite.",
+        answer:
+          "Dans la plupart des cas, une déclaration préalable de travaux suffit. Si votre bâtiment se trouve dans une zone protégée — secteur ABF, zone littorale ou commune soumise à des règles spécifiques — un permis de construire peut être nécessaire. On vous aide à clarifier les démarches lors de la visite.",
       },
       {
-        question: "Le bardage améliore-t-il vraiment l'isolation ?",
-        answer: "Oui, si on le couple à une isolation thermique par l'extérieur (ITE). On pose d'abord un isolant sur la façade existante, puis le bardage par-dessus. Le résultat est très efficace : vous supprimez les ponts thermiques et vous améliorez significativement le confort et réduisez votre facture énergétique.",
+        question: "Le bardage bac acier améliore-t-il l'isolation ?",
+        answer:
+          "Oui, si on le couple à une isolation thermique par l'extérieur (ITE). On pose d'abord un isolant (laine de roche ou polystyrène) sur la façade existante, puis le bac acier par-dessus. Le résultat est très efficace : on supprime les ponts thermiques, le confort intérieur s'améliore et la facture énergétique baisse.",
       },
       {
-        question: "Quelle différence entre bardage zinc, aluminium et bac acier ?",
-        answer: "Le zinc est le plus noble et le plus esthétique, il développe une belle patine. L'aluminium est le plus léger et totalement inoxydable, le meilleur choix en bord de mer. Le bac acier est le plus économique, disponible en de nombreuses couleurs. Le choix dépend de votre budget, de la localisation et du rendu esthétique recherché.",
+        question: "Le bac acier résiste-t-il à l'air marin et à l'humidité bretonne ?",
+        answer:
+          "Oui, c'est l'un de ses points forts. Le bac acier utilisé pour le bardage est laqué ou prélaqué avec des traitements anti-corrosion adaptés aux environnements humides. En bord de mer ou en zone rurale, il est beaucoup plus résistant qu'un bardage bois non traité. On choisit ensemble le revêtement adapté selon la localisation de votre chantier.",
       },
       {
-        question: "Peut-on poser du bardage sur n'importe quelle façade ?",
-        answer: "Dans la quasi-totalité des cas, oui. Le bardage se pose sur une ossature métallique ou bois fixée à la façade existante, ce qui permet de l'installer sur des murs en pierre, en parpaing, en brique ou en béton. On vérifie l'état de la façade lors de la visite pour s'assurer qu'elle peut recevoir les fixations.",
+        question: "Peut-on poser du bardage bac acier sur n'importe quelle façade ?",
+        answer:
+          "Dans la quasi-totalité des cas, oui. Le bardage se fixe sur une ossature métallique ancrée à la façade existante, ce qui permet de l'installer sur des murs en pierre, en parpaing, en brique ou en béton. On vérifie l'état du support lors de la visite pour s'assurer qu'il peut recevoir les fixations.",
       },
       {
         question: "Combien de temps dure la pose d'un bardage ?",
-        answer: "La durée varie selon la surface et la complexité de la façade. Pour une maison individuelle standard, comptez entre 3 et 7 jours de chantier. On vous donne une estimation précise dans le devis. On s'efforce d'intervenir de façon à minimiser les nuisances et on remet le chantier propre derrière nous.",
+        answer:
+          "La durée dépend de la surface et de la complexité de la façade. Pour une maison individuelle standard, comptez entre 3 et 7 jours de chantier. On vous donne une estimation précise dans le devis. On travaille dans le respect de votre quotidien et on remet le chantier propre à la fin.",
       },
     ] as FaqItem[],
   },
