@@ -212,7 +212,7 @@ export const services: Record<ServiceKey, Service> = {
     description2: {
       title: "L'aluminium, le choix idéal en bord de mer",
       body: "Le Morbihan, c'est 250 km de côtes, et le sel marin, c'est l'ennemi numéro un des toitures métalliques. L'aluminium est naturellement insensible à la corrosion : pas d'oxydation, pas d'entretien, pas de peinture à refaire tous les dix ans. C'est pourquoi il est particulièrement recommandé pour les maisons situées à moins de 5 km de la mer. Sa légèreté (3 fois moins lourd que l'acier) en fait aussi un excellent choix pour les extensions ou les structures qui ne peuvent pas supporter beaucoup de poids supplémentaire.",
-      image: "/images/chantiers/aluminium/aluminium3.jpg",
+      image: "/images/chantiers/aluminium/aluminium1.jpg",
       imageAlt: "Toiture aluminium sur maison contemporaine en bord de mer",
     },
     beforeAfter: {
