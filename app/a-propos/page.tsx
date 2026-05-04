@@ -142,7 +142,7 @@ const equipe = [
     description:
       "Couvreur indépendant spécialisé en ardoise, zinc, bac acier, aluminium et bardage. J’interviens à Lanester, Lorient, Ploemeur, Hennebont et dans tout le Morbihan pour vos travaux de toiture.",
     image:
-      "/images/damien_corrignan.enc",
+      "/images/damien_corrignan.jpg",
   },
 ];
 
