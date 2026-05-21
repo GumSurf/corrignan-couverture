@@ -40,14 +40,14 @@ export default function MentionsLegalesPage() {
                 <p><strong>Nom :</strong> Damien Corrignan</p>
                 <p><strong>Entreprise :</strong> Corrignan Couverture</p>
                 <p><strong>Statut :</strong> Entrepreneur individuel</p>
-                <p><strong>SIRET :</strong> [À renseigner]</p>
+                <p><strong>SIRET :</strong> 989 394 911 00014</p>
                 <p><strong>Adresse :</strong><br />
                 5 Chem. du Zulio<br />
                 56600 Lanester<br />
                 France</p>
                 <p><strong>Téléphone :</strong> 06 04 10 70 18</p>
                 <p><strong>Email :</strong> corrignan.couv56@gmail.com</p>
-                <p><strong>Directeur de la publication :</strong> Jean Corrignan</p>
+                <p><strong>Directeur de la publication :</strong> Damien Corrignan</p>
               </div>
             </div>
 
