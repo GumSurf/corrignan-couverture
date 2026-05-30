@@ -47,9 +47,6 @@ export default function ServiceBeforeAfter({ items }: Props) {
               secondImage={{ imageUrl: item.before }}
             />
           </div>
-          <p className="text-[#b8b09a] text-sm">
-            {item.caption}
-          </p>
         </motion.div>
       ))}
     </section>
