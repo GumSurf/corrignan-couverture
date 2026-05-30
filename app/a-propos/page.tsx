@@ -301,7 +301,7 @@ export default function AProposPage() {
               variants={fadeUp}
               custom={1}
             >
-              Ce qui guide notre travail au quotidien depuis 27 ans dans le Morbihan
+              Ce qui guide mon travail au quotidien depuis 27 ans dans le Morbihan
             </motion.p>
           </InViewSection>
 
