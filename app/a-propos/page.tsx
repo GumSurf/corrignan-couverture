@@ -244,7 +244,7 @@ export default function AProposPage() {
               <InViewSection className="space-y-6">
                 {[
                   `Je m'appelle Damien Corrignan, artisan couvreur basé à Lanester. 
-  Après avoir exercé en tant qu’indépendant, j’ai créé Corrignan Couverture avec une volonté simple : proposer un travail propre, durable et sans intermédiaire.`,
+  J'ai créé Corrignan Couverture avec une volonté simple : proposer un travail propre, durable et sans intermédiaire.`,
 
                   `Chaque chantier est réalisé avec la même exigence, qu’il s’agisse d’une rénovation complète, d’une réparation ou d’un projet neuf. 
   J’interviens directement, sans sous-traitance, pour garantir la qualité et le suivi du début à la fin.`,
