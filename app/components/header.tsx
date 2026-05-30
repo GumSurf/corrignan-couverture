@@ -50,7 +50,7 @@ export default function Header() {
     <div className="bg-night-800 border-b border-[#c9a84c33] sticky top-0 z-50">
       {/* ─── Topbar ─── */}
       <div className="hidden sm:flex justify-center gap-8 px-4 py-1.5 text-xs bg-[#0f0f0f] text-gold-500">
-        <span className="opacity-75">Lorient · Lanester · Locmiquélic · L&apos;Armor Plage · Morbihan</span>
+        <span className="opacity-75">Lorient · Lanester · Locmiquélic · Larmor Plage · Morbihan</span>
         <span className="font-semibold tracking-wide text-[#f0d080]">06 04 10 70 18</span>
         <span className="opacity-75">Devis gratuit</span>
       </div>
