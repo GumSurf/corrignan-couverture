@@ -94,7 +94,7 @@ export default function TestimonialsSwiper() {
               Ce que disent nos clients
             </motion.h2>
             <motion.p className="mt-2 text-[#b8b09a] text-sm">
-              Lorient · Locmiquélic · L&apos;Armor Plage · Bassin lorientais
+              Lorient · Locmiquélic · Larmor Plage · Bassin lorientais
             </motion.p>
 
             <motion.div
