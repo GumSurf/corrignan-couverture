@@ -142,7 +142,7 @@ export const services: Record<ServiceKey, Service> = {
       },
       {
         question: "Quelle est la durée de vie d'une toiture en zinc ?",
-        answer: "Une toiture en zinc bien posée dure entre 80 et 100 ans, dépend de l'épaisseur. L'entretien est minimal : un contrôle visuel tous les 10 ans suffit généralement. C'est un investissement sur le très long terme.",
+        answer: "Une toiture en zinc bien posée dure entre 80 et 100 ans, selon l'épaisseur. L'entretien est minimal : un contrôle visuel tous les 10 ans suffit généralement. C'est un investissement sur le très long terme.",
       },
       {
         question: "Le zinc convient-il aux toitures à faible pente ?",
