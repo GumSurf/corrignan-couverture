@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   robots: "index, follow",
   alternates: {
-    canonical: "https://corrignan-couverture.fr", // Remplacez par nom de domaine réel
+    canonical: "https://corrignan.fr",
   },
 };
 
